@@ -2,11 +2,11 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "ACPL-355JC-500E"
+	(symbol "DB2ERC-2.54-8P-GN"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "CN"
 			(at 0 13.97 0)
 			(effects
 				(font
@@ -14,7 +14,7 @@
 				)
 			)
 		)
-		(property "Value" "ACPL-355JC-500E"
+		(property "Value" "DB2ERC-2.54-8P-GN"
 			(at 0 -13.97 0)
 			(effects
 				(font
@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FluxForge500-lib:WSOIC-16_L10.3-W7.5-P1.27-LS10.3-BL"
+		(property "Footprint" "FluxForge500-lib:CONN-TH_8P-P2.54_DIBO_DB2ERC-2.54-8P-GN"
 			(at 0 -16.51 0)
 			(effects
 				(font
@@ -31,7 +31,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C38013275.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2927509.pdf"
 			(at 0 -19.05 0)
 			(effects
 				(font
@@ -49,7 +49,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Broadcom(博通)"
+		(property "Manufacturer" "DORABO(地博电气)"
 			(at 0 -21.59 0)
 			(effects
 				(font
@@ -58,7 +58,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "ACPL-355JC-500E"
+		(property "MPN" "DB2ERC-2.54-8P-GN"
 			(at 0 -24.13 0)
 			(effects
 				(font
@@ -67,7 +67,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C38013275"
+		(property "LCSC Part" "C2927509"
 			(at 0 -26.67 0)
 			(effects
 				(font
@@ -76,10 +76,19 @@
 				(hide yes)
 			)
 		)
-		(symbol "ACPL-355JC-500E_0_1"
+		(property "ki_keywords" "Pluggable System Terminal Block"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DB2ERC-2.54-8P-GN_0_1"
 			(rectangle
-				(start -17.78 11.43)
-				(end 17.78 -11.43)
+				(start -1.27 11.43)
+				(end 3.81 -11.43)
 				(stroke
 					(width 0)
 					(type default)
@@ -89,7 +98,7 @@
 				)
 			)
 			(circle
-				(center -16.51 10.16)
+				(center 0 10.16)
 				(radius 0.38)
 				(stroke
 					(width 0)
@@ -99,12 +108,10 @@
 					(type none)
 				)
 			)
-		)
-		(symbol "ACPL-355JC-500E_1_1"
-			(pin power_in line
-				(at -20.32 8.89 0)
+			(pin unspecified line
+				(at -3.81 8.89 0)
 				(length 2.54)
-				(name "VSS1"
+				(name "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -119,10 +126,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at -20.32 6.35 0)
+			(pin unspecified line
+				(at -3.81 6.35 0)
 				(length 2.54)
-				(name "~{UVLO}"
+				(name "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -137,10 +144,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at -20.32 3.81 0)
+			(pin unspecified line
+				(at -3.81 3.81 0)
 				(length 2.54)
-				(name "~{FAULT}"
+				(name "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -155,10 +162,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -20.32 1.27 0)
+			(pin unspecified line
+				(at -3.81 1.27 0)
 				(length 2.54)
-				(name "VDD1"
+				(name "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -173,10 +180,10 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -20.32 -1.27 0)
+			(pin unspecified line
+				(at -3.81 -1.27 0)
 				(length 2.54)
-				(name "NC"
+				(name "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -191,10 +198,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -20.32 -3.81 0)
+			(pin unspecified line
+				(at -3.81 -3.81 0)
 				(length 2.54)
-				(name "ANODE"
+				(name "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -209,10 +216,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -20.32 -6.35 0)
+			(pin unspecified line
+				(at -3.81 -6.35 0)
 				(length 2.54)
-				(name "ANODE"
+				(name "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -227,10 +234,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -20.32 -8.89 0)
+			(pin unspecified line
+				(at -3.81 -8.89 0)
 				(length 2.54)
-				(name "CATHODE"
+				(name "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -245,17 +252,126 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 20.32 8.89 180)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "HB9500M-9.5-2P"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HB9500M-9.5-2P"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FluxForge500-lib:CONN-TH_HB9500M-9.5-2P"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Barrier-Terminal-Blocks_Ningbo-Kangnex-Elec-HB9500M-9-5-2P_C601239.html"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KANGNEX(康奈克斯电气)"
+			(at 0 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "HB9500M-9.5-02P-13-00A"
+			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C601239"
+			(at 0 -19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Barrier Terminal Blocks"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "HB9500M-9.5-2P_0_1"
+			(rectangle
+				(start -1.27 3.81)
+				(end 3.81 -3.81)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center 0 2.54)
+				(radius 0.38)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin unspecified line
+				(at -3.81 1.27 0)
 				(length 2.54)
-				(name "VSS2"
+				(name "1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "16"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -263,125 +379,17 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 20.32 6.35 180)
+			(pin unspecified line
+				(at -3.81 -1.27 0)
 				(length 2.54)
-				(name "(LED2)NC"
+				(name "2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 20.32 3.81 180)
-				(length 2.54)
-				(name "OC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 20.32 1.27 180)
-				(length 2.54)
-				(name "SS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 20.32 -1.27 180)
-				(length 2.54)
-				(name "VDD2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 20.32 -3.81 180)
-				(length 2.54)
-				(name "VOUTp/CLAMP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 20.32 -6.35 180)
-				(length 2.54)
-				(name "VOUTN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 20.32 -8.89 180)
-				(length 2.54)
-				(name "Vs"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -678,6 +686,259 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "STGAP2SMTR"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STGAP2SMTR"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FluxForge500-lib:SO-8_L4.9-W3.9-P1.27-LS5.9-BL"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2802542.pdf"
+			(at 0 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ST(意法半导体)"
+			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "STGAP2SMTR"
+			(at 0 -19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C2802542"
+			(at 0 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Motor Driver ICs"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "STGAP2SMTR_0_1"
+			(rectangle
+				(start -12.7 6.35)
+				(end 12.7 -6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center -11.43 5.08)
+				(radius 0.38)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin unspecified line
+				(at -15.24 3.81 0)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -15.24 1.27 0)
+				(length 2.54)
+				(name "IN+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -15.24 -1.27 0)
+				(length 2.54)
+				(name "IN-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -15.24 -3.81 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 15.24 3.81 180)
+				(length 2.54)
+				(name "GNDISO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 15.24 1.27 180)
+				(length 2.54)
+				(name "GOFF/CLAMP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 15.24 -1.27 180)
+				(length 2.54)
+				(name "GON/GOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 15.24 -3.81 180)
+				(length 2.54)
+				(name "VH"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
