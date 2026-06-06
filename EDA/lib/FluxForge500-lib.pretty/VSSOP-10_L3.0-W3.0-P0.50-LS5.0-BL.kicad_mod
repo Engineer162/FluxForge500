@@ -1,0 +1,273 @@
+(footprint "VSSOP-10_L3.0-W3.0-P0.50-LS5.0-BL"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "16-Bit ADC with Integrated Multiplexer, PGA, Comparator, Oscillator, and Reference, -40 to 125 degC, 10-pin SOP (DGS10), Green (RoHS  no SbBr)")
+	(property "Reference" "REF**"
+		(at 0 -6.11 0)
+		(layer "F.SilkS")
+		(uuid "488a9d89-2179-4bb0-bd02-9a5c8c7cbc20")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "VSSOP-10_L3.0-W3.0-P0.50-LS5.0-BL"
+		(at 0 6.11 0)
+		(layer "F.Fab")
+		(uuid "71774d70-7df7-47de-9d83-dd0873687ae3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "994604fe-aa18-4a1c-a09a-9a65b3b8c9ec")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "feade79a-042d-4469-a0fa-a4a029e5c560")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part" "C37593"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0416ae05-620d-4db2-8097-31cf50f364ab")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.58 -1.07)
+		(end 1.58 -1.07)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e8dfb1f1-686a-4247-88b7-683f384b0061")
+	)
+	(fp_line
+		(start -1.58 1.07)
+		(end -1.58 -1.07)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "681875cd-88dd-40b0-9c65-20bf02a3d987")
+	)
+	(fp_line
+		(start 1.58 -1.07)
+		(end 1.58 1.07)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "35a1e62e-854f-4100-b74b-4a5b64c78d48")
+	)
+	(fp_line
+		(start 1.58 1.07)
+		(end -1.58 1.07)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e4880ea6-beb6-4287-8308-551ee9dd437f")
+	)
+	(fp_circle
+		(center -1.59 2.11)
+		(end -1.44 2.11)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "38717e4b-7a71-4140-9f0f-ed9be01348c8")
+	)
+	(fp_circle
+		(center -1.5 2.45)
+		(end -1.47 2.45)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "43981efe-9bb6-4a86-83f1-e2f22775ea2e")
+	)
+	(fp_circle
+		(center -1 0.32)
+		(end -0.85 0.32)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "f21d4a38-ef26-4533-a2d5-0e475829f931")
+	)
+	(fp_circle
+		(center -1.02 2.79)
+		(end -0.92 2.79)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "3807be86-5b5a-4c96-9631-5fcd9855848c")
+	)
+	(fp_line
+		(start -1.5 -1.5)
+		(end 1.5 -1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "51a07626-9db5-429d-90ed-2afb8a5fc873")
+	)
+	(fp_line
+		(start -1.5 1.5)
+		(end -1.5 -1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fbac37ef-d629-4956-bb99-2c011ef07f72")
+	)
+	(fp_line
+		(start 1.5 -1.5)
+		(end 1.5 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7162637c-e496-4769-adfd-bbe9a988241a")
+	)
+	(fp_line
+		(start 1.5 1.5)
+		(end -1.5 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4c0ce3f2-6f42-4b28-8d1a-217c4c32787d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "8e3e400d-eb54-4210-b1b8-4de6889238bd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd oval
+		(at -1 2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2924cead-c065-4459-8b3f-871470e4a0eb")
+	)
+	(pad "2" smd oval
+		(at -0.5 2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5d5bfd48-33df-487c-a9bf-de48d198250c")
+	)
+	(pad "3" smd oval
+		(at 0 2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "43afd6f7-192f-48c0-bc33-f4a9a91f9e75")
+	)
+	(pad "4" smd oval
+		(at 0.5 2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4982a490-e0d0-4653-9a2e-715a2c2a7f43")
+	)
+	(pad "5" smd oval
+		(at 1 2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "aaf509ef-205f-44fd-a0f1-c973bd6467b0")
+	)
+	(pad "6" smd oval
+		(at 1 -2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "93b26fbb-b705-4b00-a174-6f5f56dc47ac")
+	)
+	(pad "7" smd oval
+		(at 0.5 -2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3b048aa5-ae90-4b91-9165-9f646a8c0efd")
+	)
+	(pad "8" smd oval
+		(at 0 -2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c48ab4f7-85fb-4708-a5a2-fbb34b2875c2")
+	)
+	(pad "9" smd oval
+		(at -0.5 -2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9deb5f15-4f5f-4644-8842-df36f8b12e95")
+	)
+	(pad "10" smd oval
+		(at -1 -2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b061c126-9cf5-4853-b1af-5a1d041d07d3")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/lib/FluxForge500-component_models/VSSOP-10_L3.0-W3.0-H1.1-LS5.0-P0.50.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

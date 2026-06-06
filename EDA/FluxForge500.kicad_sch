@@ -747,6 +747,767 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "FluxForge500:4-Wire PWM Fan"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FAN"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "4-Wire PWM Fan"
+				(at 0 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "FluxForge500-lib:CONN-TH_47053-1000"
+				(at 0 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Others_MOLEX_47053-1000_MOLEX-47053-1000_C240840.html"
+				(at 0 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "MOLEX"
+				(at 0 -16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "470531000"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C240840"
+				(at 0 -21.59 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Wire To Board / Wire To Wire Connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "4-Wire PWM Fan_0_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 5.08 -6.35)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 0 5.08)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "4-Wire PWM Fan_1_1"
+				(pin power_in line
+					(at -3.81 3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -3.81 1.27 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -3.81 -1.27 0)
+					(length 2.54)
+					(name "TACH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -3.81 -3.81 0)
+					(length 2.54)
+					(name "PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "FluxForge500:ADS1115IDGSR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ADS1115IDGSR"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "FluxForge500-lib:VSSOP-10_L3.0-W3.0-P0.50-LS5.0-BL"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Analog-To-Digital-Converters-ADCs_TI_ADS1115IDGSR_ADS1115IDGSR_C37593.html"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "16-Bit ADC with Integrated Multiplexer, PGA, Comparator, Oscillator, and Reference, -40 to 125 degC, 10-pin SOP (DGS10), Green (RoHS  no SbBr)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TI(德州仪器)"
+				(at 0 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "ADS1115IDGSR"
+				(at 0 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C37593"
+				(at 0 -22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Analog To Digital Converters (ADCs)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ADS1115IDGSR_0_1"
+				(rectangle
+					(start -12.7 7.62)
+					(end 12.7 -7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -11.43 6.35)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 5.08 0)
+					(length 2.54)
+					(name "ADDR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 2.54 0)
+					(length 2.54)
+					(name "ALERT/RDY"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 0 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -2.54 0)
+					(length 2.54)
+					(name "AIN0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -15.24 -5.08 0)
+					(length 2.54)
+					(name "AIN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 5.08 180)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -2.54 180)
+					(length 2.54)
+					(name "AIN3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "AIN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "FluxForge500:EMC2302-1-AIZL-TR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "EMC2302-1-AIZL-TR"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "FluxForge500-lib:MSOP-10_L3.0-W3.0-P0.50-LS4.9-BL"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C626969.pdf"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "MICROCHIP(美国微芯)"
+				(at 0 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "EMC2302-1-AIZL-TR"
+				(at 0 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C626969"
+				(at 0 -22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Pre-ordered MCUs"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "EMC2302-1-AIZL-TR_0_1"
+				(rectangle
+					(start -11.43 7.62)
+					(end 11.43 -7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -10.16 6.35)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -13.97 5.08 0)
+					(length 2.54)
+					(name "SMDATA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -13.97 2.54 0)
+					(length 2.54)
+					(name "SMCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -13.97 0 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -13.97 -2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -13.97 -5.08 0)
+					(length 2.54)
+					(name "PWM1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 13.97 5.08 180)
+					(length 2.54)
+					(name "~{ALERT}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 13.97 2.54 180)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 13.97 0 180)
+					(length 2.54)
+					(name "TACH2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 13.97 -2.54 180)
+					(length 2.54)
+					(name "PWM2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 13.97 -5.08 180)
+					(length 2.54)
+					(name "TACH1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "FluxForge500:LM5176PWPR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2651,12 +3412,6 @@
 		(uuid "6ff704f4-7a1e-4f96-9e91-ff78b59953f0")
 	)
 	(junction
-		(at 69.85 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "726abe7f-2991-4897-8973-dcc8a040393e")
-	)
-	(junction
 		(at 223.52 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2765,6 +3520,12 @@
 		(uuid "c183ce76-5235-4e63-a983-d278b80b907d")
 	)
 	(junction
+		(at 68.58 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2ba8bcc-66cc-47d1-b88f-6cdd79fb779f")
+	)
+	(junction
 		(at 50.8 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2795,6 +3556,12 @@
 		(uuid "d5baf02a-74b8-43a6-8838-7876362e1f81")
 	)
 	(junction
+		(at 68.58 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d96f433e-4836-41fd-b79d-c5a025f1acd4")
+	)
+	(junction
 		(at 99.06 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2805,12 +3572,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dfaec40d-380c-4608-8793-1f8d58a63d33")
-	)
-	(junction
-		(at 69.85 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dfb5d69c-857f-4032-bc0a-b553db35540c")
 	)
 	(junction
 		(at 86.36 52.07)
@@ -2914,7 +3675,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 44.45) (xy 69.85 44.45)
+			(xy 59.69 44.45) (xy 68.58 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3034,16 +3795,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 52.07) (xy 78.74 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c3ac344-5ae9-4fe8-9ab1-aa2921f86da8")
-	)
-	(wire
-		(pts
 			(xy 240.03 44.45) (xy 247.65 44.45)
 		)
 		(stroke
@@ -3061,16 +3812,6 @@
 			(type default)
 		)
 		(uuid "1d71a472-f737-4ebf-a00e-3c3dd68b78d1")
-	)
-	(wire
-		(pts
-			(xy 69.85 44.45) (xy 78.74 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1df644d9-fce2-4f1d-bcbc-b349bc7c52c1")
 	)
 	(wire
 		(pts
@@ -3244,7 +3985,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 52.07) (xy 69.85 52.07)
+			(xy 59.69 52.07) (xy 68.58 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3854,6 +4595,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 44.45) (xy 78.74 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96a6ad31-ff04-4cfe-a3fa-9e024f99a338")
+	)
+	(wire
+		(pts
 			(xy 118.11 176.53) (xy 118.11 177.8)
 		)
 		(stroke
@@ -3921,6 +4672,16 @@
 			(type default)
 		)
 		(uuid "9eec29c0-83f0-4cb6-a659-1996fe248d5a")
+	)
+	(wire
+		(pts
+			(xy 68.58 52.07) (xy 78.74 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f8960fe-67b4-4d61-b02d-160f120cbdc4")
 	)
 	(wire
 		(pts
@@ -5156,6 +5917,109 @@
 		)
 	)
 	(symbol
+		(lib_id "FluxForge500:4-Wire PWM Fan")
+		(at 261.62 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04e58db8-166b-4ed1-bb4c-f4966ddc2ddc")
+		(property "Reference" "FAN2"
+			(at 267.97 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4-Wire PWM Fan"
+			(at 267.97 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "FluxForge500-lib:CONN-TH_47053-1000"
+			(at 261.62 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Others_MOLEX_47053-1000_MOLEX-47053-1000_C240840.html"
+			(at 261.62 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "MOLEX"
+			(at 261.62 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "470531000"
+			(at 261.62 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C240840"
+			(at 261.62 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b2c04a33-8cbf-4d70-9d16-4be754bf0245")
+		)
+		(pin "1"
+			(uuid "07781b19-dbae-4d83-a56e-915bc0017308")
+		)
+		(pin "2"
+			(uuid "39d66f2f-0e88-4728-9d45-208420073ac0")
+		)
+		(pin "4"
+			(uuid "c0626110-d20a-4a1e-ae04-ef1ef261b3b9")
+		)
+		(instances
+			(project ""
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "FAN2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 247.65 52.07 0)
 		(unit 1)
@@ -5581,7 +6445,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 69.85 48.26 0)
+		(at 68.58 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5589,7 +6453,7 @@
 		(dnp no)
 		(uuid "2311cc0c-b6b8-4ea1-8ca7-8ac0679a2d70")
 		(property "Reference" "C3"
-			(at 69.85 46.228 0)
+			(at 68.58 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5598,7 +6462,7 @@
 			)
 		)
 		(property "Value" "470uF"
-			(at 69.85 50.546 0)
+			(at 68.58 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5607,7 +6471,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
-			(at 70.8152 52.07 0)
+			(at 69.5452 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5616,7 +6480,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 48.26 0)
+			(at 68.58 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5625,7 +6489,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 69.85 48.26 0)
+			(at 68.58 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5634,7 +6498,7 @@
 			)
 		)
 		(property "MPN" "SH477M063G1700"
-			(at 69.85 48.26 0)
+			(at 68.58 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6568,6 +7432,103 @@
 		)
 	)
 	(symbol
+		(lib_id "FluxForge500:Thermistor_NTC-NTCALUG03A103H")
+		(at 251.46 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "426e0229-93a7-43a2-a38c-90ad8db35d26")
+		(property "Reference" "TH2"
+			(at 254 151.4474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NTC-10kΩ"
+			(at 254 153.9874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "FluxForge500-lib:NTC-TH_L8.8-W5.5-P1.50-D0.2"
+			(at 251.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3195220.pdf"
+			(at 251.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
+			(at 251.46 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "VISHAY"
+			(at 251.46 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NTCALUG03A103H"
+			(at 251.46 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C3195220"
+			(at 251.46 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df995dba-9f66-46be-bd40-c93a6f669cd4")
+		)
+		(pin "2"
+			(uuid "08cbd101-ba3b-477a-9fc8-53fcd0176785")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "TH2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 173.99 97.79 90)
 		(unit 1)
@@ -7246,6 +8207,125 @@
 		)
 	)
 	(symbol
+		(lib_id "FluxForge500:ADS1115IDGSR")
+		(at 203.2 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "520379fb-f808-4f8e-bd87-b467f8d8e206")
+		(property "Reference" "U7"
+			(at 203.2 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADS1115IDGSR"
+			(at 203.2 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FluxForge500-lib:VSSOP-10_L3.0-W3.0-P0.50-LS5.0-BL"
+			(at 203.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Analog-To-Digital-Converters-ADCs_TI_ADS1115IDGSR_ADS1115IDGSR_C37593.html"
+			(at 203.2 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "16-Bit ADC with Integrated Multiplexer, PGA, Comparator, Oscillator, and Reference, -40 to 125 degC, 10-pin SOP (DGS10), Green (RoHS  no SbBr)"
+			(at 203.2 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TI(德州仪器)"
+			(at 203.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ADS1115IDGSR"
+			(at 203.2 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C37593"
+			(at 203.2 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "c191329a-9820-4914-a565-b82e4f21d065")
+		)
+		(pin "2"
+			(uuid "0599e3d2-d741-43d1-a8d9-292188e8235a")
+		)
+		(pin "1"
+			(uuid "7fd7ff95-a56a-4497-8ba1-9e3b53546713")
+		)
+		(pin "4"
+			(uuid "4e8cf521-3be0-4cc9-92bf-03074bc38326")
+		)
+		(pin "5"
+			(uuid "2bdc5fbb-84ef-419e-8d73-55a48801a235")
+		)
+		(pin "3"
+			(uuid "feadb5cf-71ce-4cbe-acee-ae458a434a7d")
+		)
+		(pin "6"
+			(uuid "4ac3e3f9-8d59-4eb9-b616-01478993bcda")
+		)
+		(pin "9"
+			(uuid "e1ac7544-f002-474d-a99e-0f1d916acaed")
+		)
+		(pin "10"
+			(uuid "ea7dfaa3-bfb8-4e23-a6fc-d21462de8af2")
+		)
+		(pin "8"
+			(uuid "959ef934-dfea-4b1e-b7ea-67647d33c2b9")
+		)
+		(instances
+			(project ""
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "FluxForge500:STGAP2SMTR")
 		(at 194.31 74.93 180)
 		(unit 1)
@@ -7504,7 +8584,7 @@
 	)
 	(symbol
 		(lib_id "FluxForge500:Thermistor_NTC-NTCALUG03A103H")
-		(at 185.42 124.46 0)
+		(at 224.79 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7513,7 +8593,7 @@
 		(fields_autoplaced yes)
 		(uuid "64a09c56-8ae5-4aed-af73-9c1119191830")
 		(property "Reference" "TH1"
-			(at 187.96 123.5074 0)
+			(at 227.33 151.4474 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7522,7 +8602,7 @@
 			)
 		)
 		(property "Value" "NTC-10kΩ"
-			(at 187.96 126.0474 0)
+			(at 227.33 153.9874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7531,7 +8611,7 @@
 			)
 		)
 		(property "Footprint" "FluxForge500-lib:NTC-TH_L8.8-W5.5-P1.50-D0.2"
-			(at 185.42 123.19 0)
+			(at 224.79 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7540,7 +8620,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C3195220.pdf"
-			(at 185.42 123.19 0)
+			(at 224.79 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7549,7 +8629,7 @@
 			)
 		)
 		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
-			(at 185.42 124.46 0)
+			(at 224.79 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7558,7 +8638,7 @@
 			)
 		)
 		(property "Manufacturer" "VISHAY"
-			(at 185.42 124.46 0)
+			(at 224.79 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7567,7 +8647,7 @@
 			)
 		)
 		(property "MPN" "NTCALUG03A103H"
-			(at 185.42 124.46 0)
+			(at 224.79 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7576,7 +8656,7 @@
 			)
 		)
 		(property "LCSC Part" "C3195220"
-			(at 185.42 124.46 0)
+			(at 224.79 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7891,6 +8971,109 @@
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FluxForge500:4-Wire PWM Fan")
+		(at 237.49 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69b5fd64-1b40-4b1c-9d4c-33243070a7d8")
+		(property "Reference" "FAN1"
+			(at 243.84 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4-Wire PWM Fan"
+			(at 243.84 134.6199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "FluxForge500-lib:CONN-TH_47053-1000"
+			(at 237.49 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Others_MOLEX_47053-1000_MOLEX-47053-1000_C240840.html"
+			(at 237.49 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 237.49 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "MOLEX"
+			(at 237.49 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "470531000"
+			(at 237.49 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C240840"
+			(at 237.49 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bcd8f0dc-6f76-4e58-8142-2f53f7646f56")
+		)
+		(pin "3"
+			(uuid "ef03e9c1-b39a-4780-93fd-0bc633939f23")
+		)
+		(pin "1"
+			(uuid "e8f94b00-ef77-48d3-b900-9e971145b3dc")
+		)
+		(pin "4"
+			(uuid "48488c15-a7ba-4e77-9ba9-dceb79aab1f5")
+		)
+		(instances
+			(project ""
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "FAN1")
 					(unit 1)
 				)
 			)
@@ -8856,6 +10039,125 @@
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
 					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FluxForge500:EMC2302-1-AIZL-TR")
+		(at 242.57 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c22467b1-0cc4-41aa-a03c-47c6ed7b4efd")
+		(property "Reference" "U6"
+			(at 242.57 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "EMC2302-1-AIZL-TR"
+			(at 242.57 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FluxForge500-lib:MSOP-10_L3.0-W3.0-P0.50-LS4.9-BL"
+			(at 242.57 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C626969.pdf"
+			(at 242.57 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 242.57 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "MICROCHIP(美国微芯)"
+			(at 242.57 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "EMC2302-1-AIZL-TR"
+			(at 242.57 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C626969"
+			(at 242.57 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "037ab875-30c8-4fcf-9af1-ad0bf7f27a6a")
+		)
+		(pin "1"
+			(uuid "4d5ce064-ea1a-405c-a0b6-3e341c9f686c")
+		)
+		(pin "10"
+			(uuid "5e3b7f6b-9aeb-4296-9018-c04ecda9a61e")
+		)
+		(pin "4"
+			(uuid "337c5222-74f8-4e3c-8b08-341d4eac0a4f")
+		)
+		(pin "9"
+			(uuid "3396a8df-cbe7-4f6d-a91a-4380bdae8039")
+		)
+		(pin "8"
+			(uuid "1c87501a-bff0-441d-937e-61f6da43eb80")
+		)
+		(pin "5"
+			(uuid "20b96e22-0404-406e-b976-a5d6b19ef5f7")
+		)
+		(pin "7"
+			(uuid "31024e22-4c23-4845-8c15-aae7a4eb8fba")
+		)
+		(pin "6"
+			(uuid "dfd435c9-e867-499f-b038-c6a806d8604a")
+		)
+		(pin "3"
+			(uuid "96d45bbd-1273-491d-bcfc-3918f1379dab")
+		)
+		(instances
+			(project ""
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "U6")
 					(unit 1)
 				)
 			)
