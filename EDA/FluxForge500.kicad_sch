@@ -144,7 +144,168 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:L"
+		(symbol "Device:C_Polarized"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D"
 			(pin_numbers
 				(hide yes)
 			)
@@ -155,16 +316,16 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "L"
-				(at -1.27 0 90)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "L"
-				(at 1.905 0 90)
+			(property "Value" "D"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -189,7 +350,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Inductor"
+			(property "Description" "Diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -198,7 +359,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
+			(property "Sim.Device" "D"
 				(at 0 0 0)
 				(effects
 					(font
@@ -207,7 +368,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+			(property "Sim.Pins" "1=K 2=A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -216,47 +377,53 @@
 					(hide yes)
 				)
 			)
-			(symbol "L_0_1"
-				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
 					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -266,11 +433,11 @@
 					)
 				)
 			)
-			(symbol "L_1_1"
+			(symbol "D_1_1"
 				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -286,9 +453,159 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1061,6 +1378,168 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "FluxForge500:MEQ3230B-9ROM-D"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MEQ3230B-9ROM-D"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "FluxForge500-lib:IND-TH_MEQ3230B-9ROM-D"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C22469973.pdf"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "COILMX(迈翔科技)"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "MEQ3230B-9ROM-D"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C22469973"
+				(at 0 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MEQ3230B-9ROM-D_0_1"
+				(arc
+					(start -4.06 0.01)
+					(mid -3.035 1.0102)
+					(end -2.03 -0.01)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.03 0.01)
+					(mid -1.005 1.0102)
+					(end 0 -0.01)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0.01)
+					(mid 1.0249 1.0101)
+					(end 2.03 -0.01)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.03 0.01)
+					(mid 3.0549 1.0101)
+					(end 4.06 -0.01)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "FluxForge500:SFG019N100C3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1612,6 +2091,290 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "FluxForge500:Thermistor_NTC-NTCALUG03A103H"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TH"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Thermistor_NTC-NTCALUG03A103H"
+				(at 3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "FluxForge500-lib:NTC-TH_L8.8-W5.5-P1.50-D0.2"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C3195220.pdf"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Temperature dependent resistor, negative temperature coefficient"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "VISHAY"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "NTCALUG03A103H"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C3195220"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "thermistor NTC resistor sensor RTD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*NTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block* R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Thermistor_NTC-NTCALUG03A103H_0_1"
+				(arc
+					(start -3.175 2.413)
+					(mid -3.0506 2.3165)
+					(end -3.048 2.159)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.048 2.794)
+					(mid -2.9736 2.9736)
+					(end -2.794 3.048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.794 3.048)
+					(mid -2.6144 2.9736)
+					(end -2.54 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.794 2.54)
+					(mid -2.9736 2.6144)
+					(end -3.048 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.794 1.905)
+					(mid -2.9736 1.9794)
+					(end -3.048 2.159)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 2.159)
+					(mid -2.6144 1.9794)
+					(end -2.794 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.159 2.794)
+					(mid -2.434 2.5608)
+					(end -2.794 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.159) (xy -2.54 2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -3.683) (xy -2.54 -1.397) (xy -2.794 -2.159) (xy -2.286 -2.159) (xy -2.54 -1.397) (xy -2.54 -1.651)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.54) (xy -1.778 1.524) (xy 1.778 -1.524) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.397) (xy -1.778 -3.683) (xy -2.032 -2.921) (xy -1.524 -2.921) (xy -1.778 -3.683)
+						(xy -1.778 -3.429)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Thermistor_NTC-NTCALUG03A103H_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1714,7 +2477,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Notes: \nR1, 2, 3, and 4 can be brought down to 4,7Ω experimentally.\nRecalculate Cin and Cout."
+	(text "Notes: \nR1, 2, 8, and 9 can be brought down to 4,7Ω experimentally.\nCin should total to 1500uF minimum, Cout should total to 460uF minimum."
 		(exclude_from_sim no)
 		(at 177.292 166.624 0)
 		(effects
@@ -1726,212 +2489,362 @@
 		(uuid "7c25fd3b-30a3-4965-a312-82fa638cea67")
 	)
 	(junction
-		(at 139.7 55.88)
+		(at 107.95 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06605b85-5175-4b2b-a932-d12482e145cc")
+	)
+	(junction
+		(at 101.6 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "13e7a98d-1dd0-4bfa-aa8b-85012be1fb40")
 	)
 	(junction
-		(at 212.09 55.88)
+		(at 173.99 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14aa37c1-d4e9-44be-ba51-d26923695060")
+	)
+	(junction
+		(at 166.37 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1862c17f-a148-4d9a-8740-54ac2b21e084")
+	)
+	(junction
+		(at 181.61 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "18b15b4b-603b-4974-a837-3e749b3e83a7")
+	)
+	(junction
+		(at 189.23 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1b9fb0e3-f6bc-4a61-9235-9a04b0d2de66")
 	)
 	(junction
-		(at 247.65 36.83)
+		(at 234.95 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d85510f-b9df-4da4-88ac-015c252e7e81")
 	)
 	(junction
-		(at 154.94 130.81)
+		(at 116.84 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1ee29941-e503-4716-a289-b1ea8c78d4f4")
 	)
 	(junction
-		(at 234.95 55.88)
+		(at 212.09 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "26d143e3-31aa-43fe-8aa5-244725ad917b")
 	)
 	(junction
-		(at 116.84 63.5)
+		(at 78.74 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2a8c7fdd-ded4-4ce5-8dd9-f1ec130b0932")
 	)
 	(junction
-		(at 137.16 85.09)
+		(at 219.71 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ab4508f-d3a1-4aab-8b5b-ddc66fd2ca1a")
+	)
+	(junction
+		(at 99.06 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "308c450d-96bf-432f-8dce-d6d6b53e4dac")
 	)
 	(junction
-		(at 260.35 55.88)
+		(at 160.02 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "33e9fd9b-bf78-4688-be64-d5e91277fe47")
+		(uuid "31c28344-0061-4198-9ad2-2b3c97df15c4")
 	)
 	(junction
-		(at 171.45 123.19)
+		(at 133.35 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3828ba0a-1499-4b81-aee1-22fbb8d602cc")
 	)
 	(junction
-		(at 171.45 130.81)
+		(at 247.65 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3939edfb-6e17-4f3b-8db4-aa0363e84567")
+	)
+	(junction
+		(at 133.35 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3aeb02ad-a6f9-4deb-a31e-e1c264de8416")
 	)
 	(junction
-		(at 132.08 63.5)
+		(at 93.98 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4300924a-8be6-4182-9cb9-1dcbf6b08fdb")
 	)
 	(junction
-		(at 219.71 55.88)
+		(at 166.37 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44d263c9-4f1b-42cf-8997-77cbf145d400")
+	)
+	(junction
+		(at 196.85 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "485a11ad-1cb7-494c-be96-647c97375914")
 	)
 	(junction
-		(at 86.36 101.6)
+		(at 59.69 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49cf2186-affa-4529-98e9-91796398ec5f")
+	)
+	(junction
+		(at 48.26 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4e1f13f9-73cf-4ea9-85a4-8e6afb7459a3")
 	)
 	(junction
-		(at 240.03 55.88)
+		(at 227.33 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "618bbd0a-16f3-47f3-8f66-98968a2a22d0")
 	)
 	(junction
-		(at 207.01 85.09)
+		(at 240.03 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62e23c7f-92ba-4832-b136-457296d0f0fa")
+	)
+	(junction
+		(at 168.91 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6317e93d-1904-4246-8543-c6ee45a5321d")
 	)
 	(junction
-		(at 204.47 55.88)
+		(at 181.61 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6472ac56-056a-4f1b-af5b-0a909b9308d8")
 	)
 	(junction
-		(at 146.05 99.06)
+		(at 105.41 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6e687b50-7fae-4bf7-9ef1-a38269a44cb2")
+		(uuid "686b011c-4b04-4516-80a9-7903a460b9f8")
 	)
 	(junction
-		(at 212.09 63.5)
+		(at 189.23 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ff704f4-7a1e-4f96-9e91-ff78b59953f0")
 	)
 	(junction
-		(at 240.03 36.83)
+		(at 69.85 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "726abe7f-2991-4897-8973-dcc8a040393e")
+	)
+	(junction
+		(at 223.52 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a525596-fbc3-4d66-8812-922cfcb67652")
+	)
+	(junction
+		(at 227.33 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7dea51df-dc11-42c1-8fc2-83acdd4a5254")
 	)
 	(junction
-		(at 247.65 55.88)
+		(at 234.95 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "85885d2b-384d-44d9-9ca4-7bbec76e1ec0")
 	)
 	(junction
-		(at 227.33 63.5)
+		(at 204.47 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "89653010-2c20-4441-81f4-b8fd6ed9e37f")
 	)
 	(junction
-		(at 219.71 63.5)
+		(at 247.65 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ebe3e0f-7ee1-4971-b9c1-197eabed8b00")
+	)
+	(junction
+		(at 105.41 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "917cdafc-83de-4645-a284-dedd66e9c3a3")
+	)
+	(junction
+		(at 196.85 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92df569f-d047-4673-85ff-70e3ca51c61a")
 	)
 	(junction
-		(at 116.84 55.88)
+		(at 78.74 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "98fa4156-8dd1-45b7-83bc-9723feba8776")
 	)
 	(junction
-		(at 82.55 96.52)
+		(at 44.45 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9df66af0-928d-4388-a72e-1e8fca7ee613")
 	)
 	(junction
-		(at 198.12 99.06)
+		(at 34.29 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b04e2268-aa9e-451d-9e04-8bc8c4672bf2")
+		(uuid "a146d5b5-3c97-4a88-ba7c-3f5bb88c64e3")
 	)
 	(junction
-		(at 124.46 55.88)
+		(at 219.71 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a258a49c-aada-48ad-9ae2-0e645c7d0c72")
+	)
+	(junction
+		(at 118.11 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8b34caa-7d5b-4a18-b621-fbe635ba9bcc")
+	)
+	(junction
+		(at 101.6 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6e6ef87-8293-44a9-8fc9-b046ccdd1a95")
+	)
+	(junction
+		(at 173.99 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b74a7778-18e5-4f64-ac5f-02802931a38b")
+	)
+	(junction
+		(at 86.36 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7b2a159-c2c7-4a02-8d2e-cd99d7399b9e")
 	)
 	(junction
-		(at 252.73 55.88)
+		(at 105.41 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "be9fe3a7-3423-4685-8e86-c6bde30d8b4c")
+		(uuid "b87ca667-3920-4fd3-9515-df5479bf8838")
 	)
 	(junction
-		(at 207.01 109.22)
+		(at 168.91 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0e8c88b-3728-45e3-8a92-eeffb698b239")
 	)
 	(junction
-		(at 132.08 55.88)
+		(at 93.98 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c183ce76-5235-4e63-a983-d278b80b907d")
 	)
 	(junction
-		(at 227.33 55.88)
+		(at 50.8 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c449b26e-69fd-42b0-9622-dd7c4df1f5cc")
+	)
+	(junction
+		(at 105.41 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c753ac71-08f5-4a04-98cf-007df647c67a")
+	)
+	(junction
+		(at 59.69 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9a87f23-adbb-466f-a56f-938b183e685c")
+	)
+	(junction
+		(at 237.49 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2439031-34d8-472b-b2de-6b7ebffcbe61")
+	)
+	(junction
+		(at 204.47 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5baf02a-74b8-43a6-8838-7876362e1f81")
 	)
 	(junction
-		(at 137.16 109.22)
+		(at 99.06 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d9ece640-90be-4ddb-b82f-902c55982e53")
 	)
 	(junction
-		(at 124.46 63.5)
+		(at 212.09 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfaec40d-380c-4608-8793-1f8d58a63d33")
+	)
+	(junction
+		(at 69.85 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfb5d69c-857f-4032-bc0a-b553db35540c")
+	)
+	(junction
+		(at 86.36 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e48585ec-4018-4162-ba4a-b8e7a79b1464")
 	)
 	(junction
-		(at 171.45 116.84)
+		(at 133.35 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e522144c-9320-4e77-abb0-3aebde2694e0")
 	)
 	(junction
-		(at 154.94 123.19)
+		(at 157.48 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5b0832c-373c-4738-a19a-a469857b55be")
+	)
+	(junction
+		(at 255.27 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9e83240-0e5b-4228-a32d-b174f54afb8f")
+	)
+	(junction
+		(at 116.84 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f3ce01e2-6349-47f2-a3c4-64dfd4a6b27f")
 	)
 	(wire
 		(pts
-			(xy 138.43 109.22) (xy 137.16 109.22)
+			(xy 100.33 97.79) (xy 99.06 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1941,7 +2854,37 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 109.22) (xy 208.28 109.22)
+			(xy 224.79 88.9) (xy 226.06 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04a7cfa3-f1c0-4547-ac50-01559e17723e")
+	)
+	(wire
+		(pts
+			(xy 105.41 130.81) (xy 113.03 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05e07b03-51f9-4257-a4ea-1604a534a969")
+	)
+	(wire
+		(pts
+			(xy 107.95 87.63) (xy 128.27 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06ce82f2-85cf-40a2-b760-b7f8e4564fe6")
+	)
+	(wire
+		(pts
+			(xy 168.91 97.79) (xy 170.18 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1951,7 +2894,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 85.09) (xy 96.52 85.09)
+			(xy 44.45 73.66) (xy 58.42 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1961,7 +2904,27 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 96.52) (xy 82.55 96.52)
+			(xy 224.79 88.9) (xy 222.25 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b5104c5-3d03-4c0d-a1cb-8fa9fc25946f")
+	)
+	(wire
+		(pts
+			(xy 59.69 44.45) (xy 69.85 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c2f6321-eaa2-44d4-ad19-6ce0b1548696")
+	)
+	(wire
+		(pts
+			(xy 31.75 85.09) (xy 44.45 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1971,7 +2934,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 90.17) (xy 217.17 90.17)
+			(xy 167.64 78.74) (xy 179.07 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1981,7 +2944,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 99.06) (xy 198.12 104.14)
+			(xy 160.02 78.74) (xy 160.02 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1991,7 +2954,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 123.19) (xy 154.94 123.19)
+			(xy 110.49 111.76) (xy 116.84 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2001,7 +2964,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 165.1) (xy 76.2 165.1)
+			(xy 87.63 163.83) (xy 92.71 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2011,7 +2974,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 55.88) (xy 227.33 55.88)
+			(xy 196.85 44.45) (xy 204.47 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2021,7 +2984,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 111.76) (xy 96.52 111.76)
+			(xy 44.45 100.33) (xy 58.42 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2031,7 +2994,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 55.88) (xy 240.03 55.88)
+			(xy 212.09 44.45) (xy 219.71 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2041,7 +3004,17 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 114.3) (xy 217.17 114.3)
+			(xy 52.07 156.21) (xy 59.69 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a39e7fa-17a8-4e33-8d74-4f4333dc7069")
+	)
+	(wire
+		(pts
+			(xy 167.64 102.87) (xy 179.07 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2051,7 +3024,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 109.22) (xy 217.17 109.22)
+			(xy 177.8 97.79) (xy 179.07 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2061,7 +3034,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 63.5) (xy 116.84 63.5)
+			(xy 69.85 52.07) (xy 78.74 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2071,7 +3044,17 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 85.09) (xy 135.89 85.09)
+			(xy 240.03 44.45) (xy 247.65 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d4c72db-83cb-46d8-8946-f3cc2e8fa86b")
+	)
+	(wire
+		(pts
+			(xy 99.06 73.66) (xy 97.79 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2081,7 +3064,47 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 111.76) (xy 217.17 111.76)
+			(xy 69.85 44.45) (xy 78.74 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1df644d9-fce2-4f1d-bcbc-b349bc7c52c1")
+	)
+	(wire
+		(pts
+			(xy 16.51 125.73) (xy 20.32 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20702276-cb54-45c9-82f8-332c71b5bf96")
+	)
+	(wire
+		(pts
+			(xy 173.99 44.45) (xy 181.61 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2462edb4-557f-4c36-9bfd-1f1967c8747c")
+	)
+	(wire
+		(pts
+			(xy 50.8 52.07) (xy 59.69 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2584e4a4-e63f-4ebd-bd6c-89dc55bd3278")
+	)
+	(wire
+		(pts
+			(xy 168.91 100.33) (xy 179.07 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2091,7 +3114,17 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 63.5) (xy 227.33 63.5)
+			(xy 107.95 87.63) (xy 107.95 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27d588aa-e807-4647-a255-ef360afd5361")
+	)
+	(wire
+		(pts
+			(xy 196.85 52.07) (xy 204.47 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2101,7 +3134,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 100.33) (xy 83.82 100.33)
+			(xy 43.18 88.9) (xy 45.72 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2111,7 +3144,17 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 63.5) (xy 212.09 63.5)
+			(xy 104.14 177.8) (xy 104.14 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c7d1093-2c17-4279-ae4a-a1e6e68cd635")
+	)
+	(wire
+		(pts
+			(xy 181.61 52.07) (xy 189.23 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2121,7 +3164,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 55.88) (xy 116.84 55.88)
+			(xy 45.72 44.45) (xy 50.8 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2131,7 +3174,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 63.5) (xy 260.35 63.5)
+			(xy 240.03 52.07) (xy 247.65 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2141,7 +3184,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 85.09) (xy 82.55 96.52)
+			(xy 44.45 73.66) (xy 44.45 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2151,7 +3194,27 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 85.09) (xy 207.01 87.63)
+			(xy 219.71 76.2) (xy 219.71 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3033c415-ced3-434a-bc51-115b56716787")
+	)
+	(wire
+		(pts
+			(xy 157.48 167.64) (xy 163.83 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31735122-0de7-43b1-ac84-62519dc46dbc")
+	)
+	(wire
+		(pts
+			(xy 168.91 73.66) (xy 168.91 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2161,7 +3224,67 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 109.22) (xy 96.52 109.22)
+			(xy 97.79 142.24) (xy 100.33 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "328fb4f1-0b67-4ddf-ac3f-290420b2f09d")
+	)
+	(wire
+		(pts
+			(xy 97.79 146.05) (xy 87.63 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33253e92-5d0d-45e6-84b3-7dab3118efbf")
+	)
+	(wire
+		(pts
+			(xy 59.69 52.07) (xy 69.85 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "344dff92-d64c-44d6-a1f4-79f76de5ae18")
+	)
+	(wire
+		(pts
+			(xy 118.11 187.96) (xy 118.11 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "353ba6af-955e-4047-b53c-5c9895f9b9ab")
+	)
+	(wire
+		(pts
+			(xy 160.02 87.63) (xy 167.64 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "357bc2d3-9faa-4310-818a-c9f9781c6669")
+	)
+	(wire
+		(pts
+			(xy 157.48 175.26) (xy 157.48 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "385e360b-233e-4a14-b913-05a3491cf5db")
+	)
+	(wire
+		(pts
+			(xy 48.26 97.79) (xy 58.42 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2171,7 +3294,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 123.19) (xy 161.29 123.19)
+			(xy 116.84 111.76) (xy 123.19 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2181,7 +3304,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 114.3) (xy 138.43 114.3)
+			(xy 88.9 102.87) (xy 100.33 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2191,7 +3314,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 101.6) (xy 83.82 100.33)
+			(xy 46.99 90.17) (xy 45.72 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2201,7 +3324,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 162.56) (xy 76.2 162.56)
+			(xy 87.63 161.29) (xy 92.71 161.29)
 		)
 		(stroke
 			(width 0)
@@ -2211,7 +3334,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 134.62) (xy 78.74 134.62)
+			(xy 87.63 133.35) (xy 95.25 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2221,7 +3344,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 55.88) (xy 124.46 55.88)
+			(xy 78.74 44.45) (xy 86.36 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2231,17 +3354,17 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 55.88) (xy 252.73 55.88)
+			(xy 87.63 156.21) (xy 105.41 156.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3ca9270b-4b95-4ece-bba8-4433d259242c")
+		(uuid "3b227fc8-951f-466e-808d-878b85d26024")
 	)
 	(wire
 		(pts
-			(xy 146.05 116.84) (xy 171.45 116.84)
+			(xy 107.95 105.41) (xy 133.35 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2251,7 +3374,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 36.83) (xy 240.03 43.18)
+			(xy 227.33 25.4) (xy 227.33 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2261,7 +3384,17 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 87.63) (xy 86.36 101.6)
+			(xy 219.71 97.79) (xy 209.55 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f50ec7a-4885-4502-a220-762089a08e89")
+	)
+	(wire
+		(pts
+			(xy 48.26 76.2) (xy 48.26 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2271,7 +3404,27 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 139.7) (xy 78.74 139.7)
+			(xy 247.65 52.07) (xy 255.27 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48faa3ec-622a-4c2c-be3c-bab0289abcbd")
+	)
+	(wire
+		(pts
+			(xy 219.71 90.17) (xy 219.71 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "496ea338-bb5a-48ac-bb0a-3569a7aa1243")
+	)
+	(wire
+		(pts
+			(xy 87.63 138.43) (xy 95.25 138.43)
 		)
 		(stroke
 			(width 0)
@@ -2281,17 +3434,97 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 99.06) (xy 167.64 99.06)
+			(xy 160.02 87.63) (xy 160.02 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d5d213a-c448-4dec-8016-364592b11b1b")
+		(uuid "4f7fa14f-3f56-45bf-9b31-c98ff9c8a26a")
 	)
 	(wire
 		(pts
-			(xy 139.7 55.88) (xy 146.05 55.88)
+			(xy 118.11 177.8) (xy 129.54 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "505b1a11-e09e-4d8c-a226-96cb4456d556")
+	)
+	(wire
+		(pts
+			(xy 105.41 156.21) (xy 113.03 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "506c6247-4693-43fd-a7e2-fb7fcf1bf986")
+	)
+	(wire
+		(pts
+			(xy 100.33 138.43) (xy 105.41 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51ca8898-88ca-4ee4-aa3d-707fb56f83d7")
+	)
+	(wire
+		(pts
+			(xy 223.52 73.66) (xy 223.52 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5475b02a-af4b-4c44-91fe-1b48907987b0")
+	)
+	(wire
+		(pts
+			(xy 104.14 168.91) (xy 104.14 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "551d8c6f-7e5c-4de7-a206-8e43a5954399")
+	)
+	(wire
+		(pts
+			(xy 166.37 52.07) (xy 173.99 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58a0d832-2f6f-439a-a06f-a52006265650")
+	)
+	(wire
+		(pts
+			(xy 104.14 168.91) (xy 110.49 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59a4b24d-344a-4f53-be11-358b95781c79")
+	)
+	(wire
+		(pts
+			(xy 33.02 133.35) (xy 34.29 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5afb6674-1f32-487a-9315-7975f718967d")
+	)
+	(wire
+		(pts
+			(xy 101.6 44.45) (xy 107.95 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2301,7 +3534,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 87.63) (xy 217.17 87.63)
+			(xy 168.91 76.2) (xy 179.07 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2311,7 +3544,17 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 154.94) (xy 78.74 154.94)
+			(xy 20.32 133.35) (xy 25.4 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6363a2da-256c-40d0-84c8-a7f3aacc5c9d")
+	)
+	(wire
+		(pts
+			(xy 87.63 153.67) (xy 95.25 153.67)
 		)
 		(stroke
 			(width 0)
@@ -2321,7 +3564,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 85.09) (xy 137.16 85.09)
+			(xy 100.33 73.66) (xy 99.06 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2331,7 +3574,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 101.6) (xy 86.36 109.22)
+			(xy 48.26 90.17) (xy 48.26 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2341,7 +3584,17 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 55.88) (xy 260.35 55.88)
+			(xy 48.26 153.67) (xy 59.69 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a759fea-bca3-428f-9da4-48d353a3892b")
+	)
+	(wire
+		(pts
+			(xy 234.95 44.45) (xy 237.49 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2351,7 +3604,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 55.88) (xy 132.08 55.88)
+			(xy 86.36 44.45) (xy 93.98 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2361,7 +3614,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 109.22) (xy 207.01 111.76)
+			(xy 168.91 97.79) (xy 168.91 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2371,7 +3624,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 63.5) (xy 139.7 63.5)
+			(xy 93.98 52.07) (xy 101.6 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2381,7 +3634,27 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 130.81) (xy 171.45 130.81)
+			(xy 237.49 41.91) (xy 243.84 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f66e94b-8ef5-4545-a093-5d13d3f8b14e")
+	)
+	(wire
+		(pts
+			(xy 100.33 148.59) (xy 100.33 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "719854cd-fc00-412d-8307-c616b1f85fad")
+	)
+	(wire
+		(pts
+			(xy 130.81 119.38) (xy 133.35 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2391,17 +3664,17 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 99.06) (xy 198.12 99.06)
+			(xy 223.52 100.33) (xy 209.55 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7296c508-899e-4ad8-943d-f538028c720f")
+		(uuid "71c6c04c-24ad-4865-a508-1d4be92963e8")
 	)
 	(wire
 		(pts
-			(xy 205.74 85.09) (xy 207.01 85.09)
+			(xy 167.64 73.66) (xy 168.91 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2411,7 +3684,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 85.09) (xy 137.16 87.63)
+			(xy 99.06 73.66) (xy 99.06 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2421,7 +3694,17 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 90.17) (xy 146.05 99.06)
+			(xy 105.41 148.59) (xy 114.3 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c82c9a6-b723-4b7c-923f-6ad5f3c2eeca")
+	)
+	(wire
+		(pts
+			(xy 107.95 78.74) (xy 107.95 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2431,7 +3714,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 90.17) (xy 138.43 90.17)
+			(xy 212.09 52.07) (xy 219.71 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d0d8d13-f509-4540-8266-bec520f11147")
+	)
+	(wire
+		(pts
+			(xy 88.9 78.74) (xy 100.33 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2441,7 +3734,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 55.88) (xy 234.95 55.88)
+			(xy 204.47 44.45) (xy 212.09 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2451,7 +3744,17 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 149.86) (xy 78.74 149.86)
+			(xy 55.88 148.59) (xy 59.69 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8466f3d2-951c-4a26-9026-e7c7f89a0da6")
+	)
+	(wire
+		(pts
+			(xy 87.63 148.59) (xy 95.25 148.59)
 		)
 		(stroke
 			(width 0)
@@ -2461,7 +3764,17 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 63.5) (xy 132.08 63.5)
+			(xy 52.07 158.75) (xy 59.69 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "862043c7-1ef8-4eda-a8d9-0725a5936341")
+	)
+	(wire
+		(pts
+			(xy 86.36 52.07) (xy 93.98 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2471,7 +3784,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 87.63) (xy 137.16 87.63)
+			(xy 88.9 76.2) (xy 99.06 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2481,7 +3794,17 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 50.8) (xy 240.03 55.88)
+			(xy 157.48 176.53) (xy 162.56 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "908f21f9-cc7f-4eba-b306-2bc1491929d2")
+	)
+	(wire
+		(pts
+			(xy 227.33 39.37) (xy 227.33 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2491,7 +3814,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 85.09) (xy 217.17 85.09)
+			(xy 177.8 73.66) (xy 179.07 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2501,7 +3824,47 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 109.22) (xy 127 109.22)
+			(xy 53.34 151.13) (xy 59.69 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95294e5c-b152-4f39-840b-c77c50d01107")
+	)
+	(wire
+		(pts
+			(xy 173.99 52.07) (xy 181.61 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95bad518-eda9-44bd-a444-33885a0f25b0")
+	)
+	(wire
+		(pts
+			(xy 53.34 140.97) (xy 59.69 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9652af31-1bf7-4822-995a-04f945fa43f0")
+	)
+	(wire
+		(pts
+			(xy 118.11 176.53) (xy 118.11 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9781f752-3d5f-4e7e-825f-c6e6007ac9f1")
+	)
+	(wire
+		(pts
+			(xy 90.17 97.79) (xy 88.9 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2511,7 +3874,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 114.3) (xy 198.12 116.84)
+			(xy 160.02 102.87) (xy 160.02 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2521,7 +3884,17 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 132.08) (xy 171.45 130.81)
+			(xy 237.49 44.45) (xy 240.03 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c25f1bd-2adc-4d97-94f4-f186155414f3")
+	)
+	(wire
+		(pts
+			(xy 133.35 120.65) (xy 133.35 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2531,7 +3904,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 165.1) (xy 43.18 165.1)
+			(xy 52.07 163.83) (xy 59.69 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2541,7 +3914,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 29.21) (xy 240.03 36.83)
+			(xy 227.33 17.78) (xy 227.33 25.4)
 		)
 		(stroke
 			(width 0)
@@ -2551,7 +3924,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 130.81) (xy 161.29 130.81)
+			(xy 116.84 119.38) (xy 123.19 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2561,17 +3934,17 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 55.88) (xy 260.35 55.88)
+			(xy 97.79 142.24) (xy 97.79 146.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a16d0127-ce75-40b0-ba1d-71930588c7fe")
+		(uuid "a1639976-1b27-491a-b2f4-4b6855d208de")
 	)
 	(wire
 		(pts
-			(xy 212.09 63.5) (xy 219.71 63.5)
+			(xy 189.23 52.07) (xy 196.85 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2581,7 +3954,37 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 109.22) (xy 137.16 111.76)
+			(xy 118.11 168.91) (xy 121.92 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a32e8338-34f2-4c95-8752-88837ea747cc")
+	)
+	(wire
+		(pts
+			(xy 219.71 44.45) (xy 227.33 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a38575fd-c935-4340-82db-40f9782a57fa")
+	)
+	(wire
+		(pts
+			(xy 143.51 177.8) (xy 143.51 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3ded8c4-82c1-41b1-9b61-828601dba03e")
+	)
+	(wire
+		(pts
+			(xy 99.06 97.79) (xy 99.06 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2591,17 +3994,17 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 90.17) (xy 198.12 99.06)
+			(xy 237.49 41.91) (xy 237.49 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a8f3c170-5cda-498a-bf27-a43bda9e0d68")
+		(uuid "a7f9f05d-813f-401e-a56e-d763187a3313")
 	)
 	(wire
 		(pts
-			(xy 116.84 63.5) (xy 124.46 63.5)
+			(xy 78.74 52.07) (xy 86.36 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2611,7 +4014,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 111.76) (xy 137.16 111.76)
+			(xy 87.63 130.81) (xy 105.41 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac07a551-452e-45b6-96a7-a89ce0faaff1")
+	)
+	(wire
+		(pts
+			(xy 88.9 100.33) (xy 99.06 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2621,7 +4034,67 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 55.88) (xy 219.71 55.88)
+			(xy 87.63 135.89) (xy 100.33 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae213087-e377-4909-ab67-14a9166f7e10")
+	)
+	(wire
+		(pts
+			(xy 219.71 76.2) (xy 209.55 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aea34317-8fd9-418f-acd8-435c128e6c8d")
+	)
+	(wire
+		(pts
+			(xy 100.33 148.59) (xy 105.41 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1db418c-9962-4be9-8602-a1560b7e7e6e")
+	)
+	(wire
+		(pts
+			(xy 255.27 44.45) (xy 267.97 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7e0061d-62c5-4fcd-87bb-56606c530826")
+	)
+	(wire
+		(pts
+			(xy 139.7 168.91) (xy 143.51 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b92f7e45-04f4-4019-87f1-cada7181d84f")
+	)
+	(wire
+		(pts
+			(xy 166.37 44.45) (xy 173.99 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb30e577-1460-42c0-97b4-6fab94d50314")
+	)
+	(wire
+		(pts
+			(xy 189.23 44.45) (xy 196.85 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2631,7 +4104,17 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 123.19) (xy 171.45 123.19)
+			(xy 236.22 90.17) (xy 226.06 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc40b0f5-2c38-41be-a56f-1a4ecb5756de")
+	)
+	(wire
+		(pts
+			(xy 130.81 111.76) (xy 133.35 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2641,7 +4124,27 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 50.8) (xy 247.65 55.88)
+			(xy 53.34 146.05) (xy 59.69 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf3b696c-32e6-4dea-be55-af634c912162")
+	)
+	(wire
+		(pts
+			(xy 121.92 138.43) (xy 127 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c024286a-c329-4733-9bc7-30160f39a16a")
+	)
+	(wire
+		(pts
+			(xy 234.95 39.37) (xy 234.95 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2651,7 +4154,17 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 55.88) (xy 139.7 55.88)
+			(xy 87.63 151.13) (xy 100.33 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1c29c9c-18ce-4153-a9b6-f0662c37415f")
+	)
+	(wire
+		(pts
+			(xy 93.98 44.45) (xy 101.6 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2661,7 +4174,17 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 114.3) (xy 146.05 116.84)
+			(xy 236.22 85.09) (xy 223.52 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c76f2160-bccc-4862-afe6-e5ef178d4dc5")
+	)
+	(wire
+		(pts
+			(xy 107.95 102.87) (xy 107.95 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2671,7 +4194,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 162.56) (xy 43.18 162.56)
+			(xy 52.07 161.29) (xy 59.69 161.29)
 		)
 		(stroke
 			(width 0)
@@ -2681,17 +4204,27 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 99.06) (xy 146.05 104.14)
+			(xy 53.34 143.51) (xy 59.69 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cb2ac909-e7fe-402d-a194-30154cd03146")
+		(uuid "cb5eb7b7-648d-40ac-8da7-4c92f33d3a5d")
 	)
 	(wire
 		(pts
-			(xy 227.33 63.5) (xy 234.95 63.5)
+			(xy 105.41 138.43) (xy 114.3 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbdbb7ec-313d-4eef-ba8c-245001cbf75b")
+	)
+	(wire
+		(pts
+			(xy 204.47 52.07) (xy 212.09 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2701,7 +4234,47 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 130.81) (xy 154.94 130.81)
+			(xy 52.07 135.89) (xy 59.69 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cddecdbb-c640-4143-8e8a-af85c60fb01b")
+	)
+	(wire
+		(pts
+			(xy 49.53 130.81) (xy 59.69 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce793d83-7f5c-4177-8c6a-502ff7e085eb")
+	)
+	(wire
+		(pts
+			(xy 53.34 138.43) (xy 59.69 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d08857f3-e7ba-4dfe-b7ff-646f4c5bc801")
+	)
+	(wire
+		(pts
+			(xy 157.48 176.53) (xy 157.48 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d08dde60-2b2d-4058-a299-ecc2e9809da7")
+	)
+	(wire
+		(pts
+			(xy 110.49 119.38) (xy 116.84 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2711,7 +4284,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 116.84) (xy 171.45 123.19)
+			(xy 133.35 105.41) (xy 133.35 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2721,7 +4294,27 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 100.33) (xy 80.01 101.6)
+			(xy 247.65 44.45) (xy 255.27 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4fb9836-2ade-4f94-b512-cecbe889e84b")
+	)
+	(wire
+		(pts
+			(xy 100.33 135.89) (xy 100.33 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d511b9fd-d0a3-45ce-be4d-3572b255f90f")
+	)
+	(wire
+		(pts
+			(xy 43.18 88.9) (xy 41.91 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2731,7 +4324,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 116.84) (xy 198.12 116.84)
+			(xy 133.35 105.41) (xy 160.02 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2741,7 +4334,27 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 55.88) (xy 204.47 55.88)
+			(xy 220.98 90.17) (xy 222.25 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8686ac3-4521-4ffc-9c34-6a01d2409d66")
+	)
+	(wire
+		(pts
+			(xy 34.29 133.35) (xy 59.69 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8faee52-d64a-4c8c-8edd-d56d16a9e1a8")
+	)
+	(wire
+		(pts
+			(xy 160.02 44.45) (xy 166.37 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2751,7 +4364,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 36.83) (xy 247.65 43.18)
+			(xy 234.95 25.4) (xy 234.95 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2761,7 +4374,37 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 96.52) (xy 82.55 111.76)
+			(xy 118.11 177.8) (xy 118.11 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e063de58-42ae-402f-8baf-ba986cb2e2c2")
+	)
+	(wire
+		(pts
+			(xy 50.8 44.45) (xy 59.69 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e19e6083-06a9-4141-8b9f-c33e518f6456")
+	)
+	(wire
+		(pts
+			(xy 100.33 87.63) (xy 107.95 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3f0f0d9-78ea-4a73-9359-ce3aa269b92e")
+	)
+	(wire
+		(pts
+			(xy 44.45 85.09) (xy 44.45 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2771,7 +4414,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 101.6) (xy 80.01 101.6)
+			(xy 31.75 90.17) (xy 41.91 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2781,7 +4424,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 85.09) (xy 128.27 85.09)
+			(xy 40.64 135.89) (xy 44.45 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e576bc80-b7db-4b14-a633-ce346179d65f")
+	)
+	(wire
+		(pts
+			(xy 88.9 73.66) (xy 90.17 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2791,7 +4444,17 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 55.88) (xy 146.05 80.01)
+			(xy 138.43 87.63) (xy 160.02 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7f4d67d-1724-489d-a8d3-d439950b7fd9")
+	)
+	(wire
+		(pts
+			(xy 107.95 44.45) (xy 107.95 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2801,7 +4464,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 55.88) (xy 198.12 80.01)
+			(xy 160.02 44.45) (xy 160.02 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2811,7 +4474,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 101.6) (xy 86.36 101.6)
+			(xy 46.99 90.17) (xy 48.26 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2821,7 +4484,17 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 87.63) (xy 96.52 87.63)
+			(xy 223.52 85.09) (xy 223.52 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f418d88b-8730-41b5-b404-26a3d138e88d")
+	)
+	(wire
+		(pts
+			(xy 48.26 76.2) (xy 58.42 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2831,7 +4504,37 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 109.22) (xy 135.89 109.22)
+			(xy 220.98 90.17) (xy 219.71 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5707f5c-c9e6-4b01-bf18-bbb717f2e434")
+	)
+	(wire
+		(pts
+			(xy 121.92 148.59) (xy 127 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f699d186-dcaa-4f29-8198-5c7446bd11d6")
+	)
+	(wire
+		(pts
+			(xy 223.52 73.66) (xy 209.55 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7cc4697-7776-43af-a26a-c4c71ae817f2")
+	)
+	(wire
+		(pts
+			(xy 99.06 97.79) (xy 97.79 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2841,7 +4544,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 109.22) (xy 207.01 109.22)
+			(xy 167.64 97.79) (xy 168.91 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2851,7 +4554,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 85.09) (xy 208.28 85.09)
+			(xy 168.91 73.66) (xy 170.18 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2861,7 +4564,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 55.88) (xy 212.09 55.88)
+			(xy 181.61 44.45) (xy 189.23 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2871,7 +4574,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 29.21) (xy 247.65 36.83)
+			(xy 234.95 17.78) (xy 234.95 25.4)
 		)
 		(stroke
 			(width 0)
@@ -2879,8 +4582,58 @@
 		)
 		(uuid "fe4e90fd-28bb-4510-a930-407f79d9aabe")
 	)
+	(wire
+		(pts
+			(xy 157.48 186.69) (xy 157.48 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff0ca26b-1d5b-4001-baf8-e2ba007107db")
+	)
+	(label "SW1"
+		(at 100.33 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "077c9b34-872c-4cfa-bbe0-81797ff068f3")
+	)
+	(label "SW2"
+		(at 113.03 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "07edde2e-24cb-4dae-862c-b3b97fb8efe2")
+	)
+	(label "FB"
+		(at 162.56 176.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "10547a25-3d3d-408c-9852-40d233ebbcbe")
+	)
+	(label "VOSNS"
+		(at 52.07 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "141f52b5-76b1-4ff8-98e3-e8f286fb4083")
+	)
 	(label "ISNS-"
-		(at 247.65 29.21 270)
+		(at 234.95 17.78 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2889,8 +4642,18 @@
 		)
 		(uuid "1bb4d07b-09a0-42d3-8e76-c5ecda14ef6a")
 	)
+	(label "VCC"
+		(at 127 148.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "22466b3d-7fb5-4e5f-abe1-00997c7935c2")
+	)
 	(label "ISNS-"
-		(at 35.56 162.56 0)
+		(at 52.07 161.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2900,7 +4663,7 @@
 		(uuid "2561d606-a070-499d-bda9-1c2b5b9c8253")
 	)
 	(label "ISNS+"
-		(at 240.03 29.21 270)
+		(at 227.33 17.78 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2909,8 +4672,18 @@
 		)
 		(uuid "2aa1a657-0b14-4b5f-a9bd-d51e78d4a7d4")
 	)
+	(label "COMP"
+		(at 194.31 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3954650f-9f9c-4bfa-abfd-e58d9a559bd4")
+	)
 	(label "CSG"
-		(at 76.2 165.1 180)
+		(at 92.71 163.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2919,8 +4692,38 @@
 		)
 		(uuid "3b7557d6-4d66-4f80-8bbd-00e2ffba2ab1")
 	)
+	(label "DITH"
+		(at 194.31 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4651ece0-43f4-41a1-acc6-3be530fd6daf")
+	)
+	(label "VIN"
+		(at 40.64 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a029a11-0e60-4174-86f2-3e1b6bb123b4")
+	)
+	(label "VCC"
+		(at 127 138.43 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4dd4e451-f86c-485c-8cd6-e0e8f9b82961")
+	)
 	(label "LDRV2"
-		(at 78.74 149.86 180)
+		(at 95.25 148.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2930,7 +4733,7 @@
 		(uuid "4f82311b-b7e0-4660-9753-bc06aa29427b")
 	)
 	(label "CSG"
-		(at 148.59 130.81 0)
+		(at 110.49 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2940,7 +4743,7 @@
 		(uuid "582d06e5-7b8a-4063-ba83-2fc7efcc52b5")
 	)
 	(label "HDRV1"
-		(at 78.74 134.62 180)
+		(at 95.25 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2949,8 +4752,48 @@
 		)
 		(uuid "62a855f6-c5e8-4e1e-9379-ef93870a7135")
 	)
+	(label "VOSNS"
+		(at 163.83 167.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "64678043-98e4-4ece-9575-8b2aae9566fe")
+	)
+	(label "VIN"
+		(at 16.51 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a15546e-de2a-4ff4-8ac2-f34fde2f8bb6")
+	)
+	(label "LDRV2"
+		(at 236.22 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6c81d5e9-6ce7-4a6e-b97c-9ab96de77e87")
+	)
+	(label "VOSNS"
+		(at 243.84 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "70063683-2219-4f64-8977-84b4fd75c75e")
+	)
 	(label "LDRV1"
-		(at 78.74 139.7 180)
+		(at 95.25 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2959,8 +4802,18 @@
 		)
 		(uuid "786b77d6-514d-4836-959e-e95348dbef54")
 	)
+	(label "VIN"
+		(at 121.92 168.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8471138d-f640-4cae-9322-e8cbaba541b5")
+	)
 	(label "ISNS+"
-		(at 35.56 165.1 0)
+		(at 52.07 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2970,7 +4823,7 @@
 		(uuid "896d0b84-6b67-4ac4-8398-7e1bcbfa51e4")
 	)
 	(label "CS"
-		(at 148.59 123.19 0)
+		(at 110.49 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2979,8 +4832,58 @@
 		)
 		(uuid "9224449e-9807-4272-874d-dd2dd90277f5")
 	)
+	(label "SLOPE"
+		(at 53.34 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a109a8d3-2edb-4dec-9e7f-99cbe1a511cb")
+	)
+	(label "FB"
+		(at 52.07 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a11c33ba-8ef7-4146-81fd-86f466d238b3")
+	)
+	(label "SW2"
+		(at 167.64 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a9d32eb0-e5cd-46c3-a5c7-0b90ff37d64f")
+	)
+	(label "RT"
+		(at 194.31 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad203e7d-8ac7-4890-995e-4027beb969c3")
+	)
+	(label "EN{slash}UVLO"
+		(at 129.54 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0c66490-e32b-42f6-99c7-26b2edcd03a7")
+	)
 	(label "LDRV1"
-		(at 69.85 96.52 0)
+		(at 31.75 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2989,8 +4892,28 @@
 		)
 		(uuid "b801bd44-31bb-47ba-94c3-8f9bd31215f2")
 	)
+	(label "MODE"
+		(at 110.49 168.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bfabf5fc-789a-478a-951b-44975a70dab0")
+	)
+	(label "SS"
+		(at 139.7 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1c9d588-d4a6-4f7d-8ed7-ce1cd34d611d")
+	)
 	(label "CS"
-		(at 76.2 162.56 180)
+		(at 92.71 161.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2999,8 +4922,48 @@
 		)
 		(uuid "c27329fd-f220-4fc2-9a10-9e9fb41a6266")
 	)
+	(label "DITH"
+		(at 53.34 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c55d9dca-22d0-482d-aa17-40f1e5375eac")
+	)
+	(label "RT"
+		(at 53.34 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc66fb6e-f99c-45b9-b71e-b8ef95303d11")
+	)
+	(label "HDRV2"
+		(at 236.22 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ccc7d95f-2426-4d08-9877-04d703f08f21")
+	)
+	(label "SS"
+		(at 55.88 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0443306-fc4a-4881-9910-c6da59c770d0")
+	)
 	(label "HDRV1"
-		(at 69.85 101.6 0)
+		(at 31.75 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3010,7 +4973,7 @@
 		(uuid "d6187f4a-3fb8-4d1c-87ef-dca67288c958")
 	)
 	(label "HDRV2"
-		(at 78.74 154.94 180)
+		(at 95.25 153.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3019,8 +4982,48 @@
 		)
 		(uuid "d6ddb8e7-9747-49a7-a087-414c1b324ab1")
 	)
+	(label "EN{slash}UVLO"
+		(at 49.53 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db563e97-39be-460a-a1d4-d5ee87ce4dc3")
+	)
+	(label "MODE"
+		(at 53.34 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc95b835-f6a5-4d8f-bab6-7512dd7ffbaf")
+	)
+	(label "VIN"
+		(at 45.72 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ebe9126f-47b9-47c8-8cc9-4cb5e4ecf9b0")
+	)
+	(label "COMP"
+		(at 53.34 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "edb0255d-ea57-4fb2-b38b-a425bd18e460")
+	)
 	(label "VOUT"
-		(at 269.24 55.88 180)
+		(at 267.97 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3029,9 +5032,29 @@
 		)
 		(uuid "ede9e9cc-e959-4545-880b-205768e0186a")
 	)
+	(label "SW1"
+		(at 113.03 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fca5c7e1-a4f6-4ab8-8f4c-fe2ea2416516")
+	)
+	(label "SLOPE"
+		(at 194.31 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ffecb3f4-9b5c-4acf-9c7c-ee1a8a401541")
+	)
 	(symbol
 		(lib_id "FluxForge500:SFG019N100C3")
-		(at 143.51 109.22 0)
+		(at 105.41 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3040,7 +5063,7 @@
 		(fields_autoplaced yes)
 		(uuid "007f01dd-09e4-4a95-aa2b-6da8cefec7b8")
 		(property "Reference" "Q2"
-			(at 151.13 109.2199 0)
+			(at 113.03 97.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3049,7 +5072,7 @@
 			)
 		)
 		(property "Value" "SFG019N100C3"
-			(at 151.13 111.7599 0)
+			(at 113.03 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3058,7 +5081,7 @@
 			)
 		)
 		(property "Footprint" "FluxForge500-lib:TO-247-4_L16.8-W5.0-L"
-			(at 143.51 121.92 0)
+			(at 105.41 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3067,7 +5090,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C49257109.pdf"
-			(at 143.51 124.46 0)
+			(at 105.41 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3076,7 +5099,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 143.51 109.22 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3085,7 +5108,7 @@
 			)
 		)
 		(property "Manufacturer" "赛力康电气"
-			(at 143.51 127 0)
+			(at 105.41 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3094,7 +5117,7 @@
 			)
 		)
 		(property "MPN" "SFG019N100C3"
-			(at 143.51 129.54 0)
+			(at 105.41 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3103,7 +5126,7 @@
 			)
 		)
 		(property "LCSC Part" "C49257109"
-			(at 143.51 132.08 0)
+			(at 105.41 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3133,24 +5156,26 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 165.1 123.19 90)
+		(lib_id "power:GND")
+		(at 247.65 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "19ba16fe-0c86-419d-b216-9fe8ac1227a5")
-		(property "Reference" "R6"
-			(at 165.1 118.872 90)
+		(fields_autoplaced yes)
+		(uuid "0631e662-3005-42b7-abb0-118052ba137c")
+		(property "Reference" "#PWR08"
+			(at 247.65 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "100Ω"
-			(at 165.1 120.904 90)
+		(property "Value" "GND"
+			(at 247.65 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3158,7 +5183,140 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 124.968 90)
+			(at 247.65 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 247.65 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd79cad7-8dae-41ab-9e02-91ad0be4b4c4")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 48.26 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "064e690a-e6b4-45aa-9104-8aff0384f5b2")
+		(property "Reference" "#PWR01"
+			(at 48.26 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.26 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 48.26 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "821aef87-026e-4d95-827a-67479e6e15a9")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 20.32 129.54 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0db073ae-8946-4933-ae4d-0e71bc094fad")
+		(property "Reference" "D3"
+			(at 22.86 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 22.86 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 20.32 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3167,7 +5325,162 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 123.19 0)
+			(at 20.32 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 20.32 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 20.32 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 20.32 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "912398cb-2b6b-40a2-9007-d692a216387b")
+		)
+		(pin "2"
+			(uuid "857b15d4-3ba5-40c4-aec9-29c6d9c75e83")
+		)
+		(instances
+			(project ""
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 143.51 172.72 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "17ae04c1-3d71-4665-a462-043b1f6985f4")
+		(property "Reference" "C11"
+			(at 143.51 174.752 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150nF"
+			(at 143.51 170.434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.4752 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 143.51 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de18d595-71d1-4b7a-bc47-6e50ee27b964")
+		)
+		(pin "2"
+			(uuid "01fcf93a-7c70-47cc-a86b-ea6c556b2ffe")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 127 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19ba16fe-0c86-419d-b216-9fe8ac1227a5")
+		(property "Reference" "R5"
+			(at 127 107.442 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100Ω"
+			(at 127 109.474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 113.538 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3176,7 +5489,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 165.1 123.19 0)
+			(at 127 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3193,7 +5506,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "R6")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3201,15 +5514,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 165.1 130.81 90)
+		(at 127 119.38 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "19f40507-2175-4f7f-87c2-421f31e45170")
-		(property "Reference" "R7"
-			(at 165.1 126.492 90)
+		(property "Reference" "R6"
+			(at 127 115.062 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3217,7 +5530,7 @@
 			)
 		)
 		(property "Value" "100Ω"
-			(at 165.1 128.524 90)
+			(at 127 117.094 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3225,7 +5538,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 132.588 90)
+			(at 127 121.158 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3234,7 +5547,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 130.81 0)
+			(at 127 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3243,7 +5556,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 165.1 130.81 0)
+			(at 127 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3260,23 +5573,23 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "R7")
+					(reference "R6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 109.22 59.69 0)
+		(lib_id "Device:C_Polarized")
+		(at 69.85 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "20573fc7-b204-4337-bf32-2cc269042527")
-		(property "Reference" "C6"
-			(at 109.22 57.658 0)
+		(uuid "2311cc0c-b6b8-4ea1-8ca7-8ac0679a2d70")
+		(property "Reference" "C3"
+			(at 69.85 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3284,8 +5597,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
-			(at 109.22 61.976 0)
+		(property "Value" "470uF"
+			(at 69.85 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3293,8 +5606,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 110.1852 63.5 0)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+			(at 70.8152 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3303,7 +5616,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 109.22 59.69 0)
+			(at 69.85 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3311,8 +5624,84 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 109.22 59.69 0)
+		(property "Description" "Polarized capacitor"
+			(at 69.85 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SH477M063G1700"
+			(at 69.85 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "42a16b82-0248-498e-a5be-d100de8727ab")
+		)
+		(pin "1"
+			(uuid "dfa7441a-10ff-4b5c-b9c7-dd9ce0a06627")
+		)
+		(instances
+			(project ""
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 104.14 173.99 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26b437a5-0e60-4d6a-9997-45ac4424d950")
+		(property "Reference" "R15"
+			(at 100.33 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "93.1kΩ"
+			(at 102.108 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.918 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 104.14 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3321,15 +5710,80 @@
 			)
 		)
 		(pin "1"
-			(uuid "04ce6503-b99a-49f9-816f-c7bf7450d15c")
+			(uuid "2b779023-35f5-4bc1-9dc3-3c7dd6a74f7a")
 		)
 		(pin "2"
-			(uuid "ff21625c-4a28-4bba-b0b2-8d25bf34daac")
+			(uuid "2f98257b-e834-480a-b32b-823ae530e3b2")
 		)
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C6")
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2771ee5f-a91c-40df-b18e-5eef89628efe")
+		(property "Reference" "#PWR06"
+			(at 143.51 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6cae8ce5-5d7f-44b4-a358-75c87de95039")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -3337,7 +5791,7 @@
 	)
 	(symbol
 		(lib_id "FluxForge500:SFG019N100C3")
-		(at 143.51 85.09 0)
+		(at 105.41 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3346,7 +5800,7 @@
 		(fields_autoplaced yes)
 		(uuid "2899ae1e-4f77-4e86-8a75-d1b640792692")
 		(property "Reference" "Q1"
-			(at 151.13 85.0899 0)
+			(at 113.03 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3355,7 +5809,7 @@
 			)
 		)
 		(property "Value" "SFG019N100C3"
-			(at 151.13 87.6299 0)
+			(at 113.03 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3364,7 +5818,7 @@
 			)
 		)
 		(property "Footprint" "FluxForge500-lib:TO-247-4_L16.8-W5.0-L"
-			(at 143.51 97.79 0)
+			(at 105.41 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3373,7 +5827,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C49257109.pdf"
-			(at 143.51 100.33 0)
+			(at 105.41 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3382,7 +5836,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 143.51 85.09 0)
+			(at 105.41 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3391,7 +5845,7 @@
 			)
 		)
 		(property "Manufacturer" "赛力康电气"
-			(at 143.51 102.87 0)
+			(at 105.41 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3400,7 +5854,7 @@
 			)
 		)
 		(property "MPN" "SFG019N100C3"
-			(at 143.51 105.41 0)
+			(at 105.41 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3409,7 +5863,7 @@
 			)
 		)
 		(property "LCSC Part" "C49257109"
-			(at 143.51 107.95 0)
+			(at 105.41 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3440,7 +5894,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 212.09 85.09 90)
+		(at 173.99 73.66 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3448,8 +5902,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c5adebd-52b1-4e05-9f5d-85c9b88796ec")
-		(property "Reference" "R3"
-			(at 212.09 78.74 90)
+		(property "Reference" "R8"
+			(at 173.99 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3457,7 +5911,7 @@
 			)
 		)
 		(property "Value" "10Ω"
-			(at 212.09 81.28 90)
+			(at 173.99 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3465,7 +5919,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 212.09 86.868 90)
+			(at 173.99 75.438 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3474,7 +5928,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.09 85.09 0)
+			(at 173.99 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3483,7 +5937,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 212.09 85.09 0)
+			(at 173.99 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3500,7 +5954,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "R3")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -3508,15 +5962,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 243.84 55.88 90)
+		(at 231.14 44.45 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "34516c09-7b91-4cea-970e-4a1215efc33c")
-		(property "Reference" "R8"
-			(at 243.84 51.562 90)
+		(property "Reference" "R11"
+			(at 231.14 40.132 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3524,7 +5978,7 @@
 			)
 		)
 		(property "Value" "0Ω"
-			(at 243.84 53.594 90)
+			(at 231.14 42.164 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3532,7 +5986,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 243.84 57.658 90)
+			(at 231.14 46.228 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3541,7 +5995,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 55.88 0)
+			(at 231.14 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3550,7 +6004,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 243.84 55.88 0)
+			(at 231.14 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3567,7 +6021,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "R8")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -3575,7 +6029,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 171.45 127 0)
+		(at 133.35 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3583,8 +6037,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3462ddf5-3c2b-4d94-8fa7-72495c9f6c2d")
-		(property "Reference" "R5"
-			(at 173.99 125.7299 0)
+		(property "Reference" "R7"
+			(at 135.89 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3593,7 +6047,7 @@
 			)
 		)
 		(property "Value" "8mΩ"
-			(at 173.99 128.2699 0)
+			(at 135.89 116.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3602,7 +6056,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 169.672 127 90)
+			(at 131.572 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3611,7 +6065,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 171.45 127 0)
+			(at 133.35 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3620,7 +6074,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 171.45 127 0)
+			(at 133.35 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3637,7 +6091,7 @@
 		(instances
 			(project ""
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "R5")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -3645,7 +6099,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 132.08 85.09 90)
+		(at 93.98 73.66 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3654,7 +6108,7 @@
 		(fields_autoplaced yes)
 		(uuid "351b945d-b68d-4141-a19b-64354f2e9edb")
 		(property "Reference" "R1"
-			(at 132.08 78.74 90)
+			(at 93.98 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3662,7 +6116,7 @@
 			)
 		)
 		(property "Value" "10Ω"
-			(at 132.08 81.28 90)
+			(at 93.98 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3670,7 +6124,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 86.868 90)
+			(at 93.98 75.438 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3679,7 +6133,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 85.09 0)
+			(at 93.98 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3688,7 +6142,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 132.08 85.09 0)
+			(at 93.98 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3713,15 +6167,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 139.7 59.69 0)
+		(at 101.6 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "3ac36eae-a28b-4e93-8fc3-a025e8917e5f")
-		(property "Reference" "C2"
-			(at 139.7 57.658 0)
+		(property "Reference" "C9"
+			(at 101.6 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3729,8 +6183,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
-			(at 139.7 61.976 0)
+		(property "Value" "22uF"
+			(at 101.6 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3738,8 +6192,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 140.6652 63.5 0)
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
+			(at 102.5652 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3748,7 +6202,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 59.69 0)
+			(at 101.6 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3757,7 +6211,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 139.7 59.69 0)
+			(at 101.6 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FS55X226K101LRG"
+			(at 101.6 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3774,7 +6237,151 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C2")
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 247.65 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b06b107-28e3-4b5c-8e66-ba97d23f4a44")
+		(property "Reference" "C22"
+			(at 247.65 46.228 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "180uF"
+			(at 247.65 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+			(at 248.6152 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247.65 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 247.65 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "A750MW187M1JAAE020"
+			(at 247.65 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e54acb57-c21c-4aa8-8075-fdc5699d4a4a")
+		)
+		(pin "1"
+			(uuid "c8e61b3a-2ac3-424c-b895-5e1d03bf0cfa")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 104.14 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b8cdf90-402e-463c-a6f3-0c3782b6d1d3")
+		(property "Reference" "#PWR010"
+			(at 104.14 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ffe1d328-5c58-459c-ac25-d6ea33589c30")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -3782,7 +6389,7 @@
 	)
 	(symbol
 		(lib_id "FluxForge500:STGAP2SMTR")
-		(at 111.76 110.49 0)
+		(at 73.66 99.06 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3790,8 +6397,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "40299eb1-e3ef-416d-b1f9-4b3fa234b271")
-		(property "Reference" "U2"
-			(at 111.76 99.568 0)
+		(property "Reference" "U3"
+			(at 73.66 88.138 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3799,7 +6406,7 @@
 			)
 		)
 		(property "Value" "STGAP2SCMTR"
-			(at 111.76 101.854 0)
+			(at 73.66 90.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3807,7 +6414,7 @@
 			)
 		)
 		(property "Footprint" "FluxForge500-lib:SO-8_L4.9-W3.9-P1.27-LS5.9-BL"
-			(at 111.76 99.06 0)
+			(at 73.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3816,7 +6423,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C2970172.pdf"
-			(at 111.76 96.52 0)
+			(at 73.66 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3825,7 +6432,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 111.76 110.49 0)
+			(at 73.66 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3834,7 +6441,7 @@
 			)
 		)
 		(property "Manufacturer" "ST(意法半导体)"
-			(at 111.76 93.98 0)
+			(at 73.66 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3843,7 +6450,7 @@
 			)
 		)
 		(property "MPN" "STGAP2SCMTR"
-			(at 111.76 91.44 0)
+			(at 73.66 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3852,7 +6459,7 @@
 			)
 		)
 		(property "LCSC Part" "C2970172"
-			(at 111.76 88.9 0)
+			(at 73.66 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3887,32 +6494,31 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "U2")
+					(reference "U3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 171.45 99.06 90)
+		(lib_id "Device:D_Schottky")
+		(at 118.11 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "428ee694-f5c2-4d4d-9814-e10aa8b7a0ad")
-		(property "Reference" "L1"
-			(at 171.45 93.98 90)
+		(uuid "415a97e4-2e39-4efd-a00a-049a9d222cae")
+		(property "Reference" "D1"
+			(at 118.11 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "L"
-			(at 171.45 96.52 90)
+		(property "Value" "D_Schottky"
+			(at 118.11 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3920,7 +6526,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 99.06 0)
+			(at 118.11 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3929,7 +6535,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 171.45 99.06 0)
+			(at 118.11 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3937,25 +6543,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
-			(at 171.45 99.06 0)
+		(property "Description" "Schottky diode"
+			(at 118.11 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "c37b08cc-b346-4f5b-ae7a-6641edb69fcb")
 		)
 		(pin "2"
-			(uuid "94cfbc61-5061-47d6-970e-958a73e303b0")
+			(uuid "458298ae-565f-4942-9f4c-3d56237782c2")
+		)
+		(pin "1"
+			(uuid "075c7ab3-423d-4346-9c7d-d59e68ee6271")
 		)
 		(instances
 			(project ""
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "L1")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -3963,7 +6569,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 212.09 109.22 90)
+		(at 173.99 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3971,8 +6577,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4387e259-ddb4-4b87-96d8-94dd1bfde3c3")
-		(property "Reference" "R4"
-			(at 212.09 102.87 90)
+		(property "Reference" "R9"
+			(at 173.99 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3980,7 +6586,7 @@
 			)
 		)
 		(property "Value" "10Ω"
-			(at 212.09 105.41 90)
+			(at 173.99 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3988,7 +6594,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 212.09 110.998 90)
+			(at 173.99 99.568 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3997,7 +6603,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.09 109.22 0)
+			(at 173.99 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4006,7 +6612,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 212.09 109.22 0)
+			(at 173.99 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4023,7 +6629,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "R4")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -4031,7 +6637,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 219.71 63.5 0)
+		(at 166.37 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4039,8 +6645,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48fee7ad-e148-4420-b675-c7b2cc2e2489")
-		(property "Reference" "#PWR02"
-			(at 219.71 69.85 0)
+		(property "Reference" "#PWR07"
+			(at 166.37 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4049,7 +6655,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 219.71 68.58 0)
+			(at 166.37 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4057,7 +6663,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 219.71 63.5 0)
+			(at 166.37 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4066,7 +6672,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 63.5 0)
+			(at 166.37 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4075,7 +6681,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 219.71 63.5 0)
+			(at 166.37 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4089,7 +6695,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "#PWR02")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4097,7 +6703,7 @@
 	)
 	(symbol
 		(lib_id "FluxForge500:LM5176PWPR")
-		(at 57.15 147.32 0)
+		(at 73.66 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4105,8 +6711,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "499817f2-09ae-486c-9c59-4259dc502cf7")
-		(property "Reference" "U5"
-			(at 57.15 121.92 0)
+		(property "Reference" "U1"
+			(at 73.66 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4114,7 +6720,7 @@
 			)
 		)
 		(property "Value" "LM5176PWPR"
-			(at 57.15 124.46 0)
+			(at 73.66 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4122,7 +6728,7 @@
 			)
 		)
 		(property "Footprint" "FluxForge500-lib:HTSSOP-28_L9.7-W4.4-P0.65-LS6.4-BL-EP"
-			(at 57.15 172.72 0)
+			(at 73.66 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4131,7 +6737,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C442493.pdf"
-			(at 57.15 175.26 0)
+			(at 73.66 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4140,7 +6746,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 57.15 147.32 0)
+			(at 73.66 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4149,7 +6755,7 @@
 			)
 		)
 		(property "Manufacturer" "TI(德州仪器)"
-			(at 57.15 177.8 0)
+			(at 73.66 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4158,7 +6764,7 @@
 			)
 		)
 		(property "MPN" "LM5176PWPR"
-			(at 57.15 180.34 0)
+			(at 73.66 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4167,7 +6773,7 @@
 			)
 		)
 		(property "LCSC Part" "C442493"
-			(at 57.15 182.88 0)
+			(at 73.66 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4265,7 +6871,73 @@
 		(instances
 			(project ""
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "U5")
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 34.29 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b17ef02-24d9-4b61-b889-c5cb8f02c4e2")
+		(property "Reference" "#PWR09"
+			(at 34.29 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 34.29 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68ce7efb-cfb3-4bc6-82de-ecee822ebdb0")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -4273,15 +6945,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 227.33 59.69 0)
+		(at 204.47 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "4bc54df8-6523-4e62-84f8-c96ed3e8c10f")
-		(property "Reference" "C10"
-			(at 227.33 57.658 0)
+		(property "Reference" "C17"
+			(at 204.47 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4289,8 +6961,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 227.33 61.976 0)
+		(property "Value" "22uF"
+			(at 204.47 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4298,8 +6970,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 228.2952 63.5 0)
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
+			(at 205.4352 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4308,7 +6980,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 227.33 59.69 0)
+			(at 204.47 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4317,7 +6989,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 227.33 59.69 0)
+			(at 204.47 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FS55X226K101LRG"
+			(at 204.47 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4334,7 +7015,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C10")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -4342,15 +7023,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 116.84 59.69 0)
+		(at 78.74 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "50e7a2f0-a246-41c9-88f2-93d3e77f00d6")
-		(property "Reference" "C5"
-			(at 116.84 57.658 0)
+		(property "Reference" "C4"
+			(at 78.74 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4358,8 +7039,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
-			(at 116.84 61.976 0)
+		(property "Value" "22uF"
+			(at 78.74 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4367,8 +7048,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 117.8052 63.5 0)
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
+			(at 79.7052 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4377,7 +7058,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 59.69 0)
+			(at 78.74 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4386,7 +7067,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 116.84 59.69 0)
+			(at 78.74 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FS55X226K101LRG"
+			(at 78.74 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4403,40 +7093,41 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C5")
+					(reference "C4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 132.08 109.22 90)
+		(lib_id "Device:C_Polarized")
+		(at 50.8 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5200bce3-11e7-4bed-a756-855bb0bf608b")
-		(property "Reference" "R2"
-			(at 132.08 102.87 90)
+		(uuid "5133b074-2917-495b-9491-d776ca2d7832")
+		(property "Reference" "C1"
+			(at 50.8 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "10Ω"
-			(at 132.08 105.41 90)
+		(property "Value" "470uF"
+			(at 50.8 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 132.08 110.998 90)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+			(at 51.7652 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4445,7 +7136,84 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 109.22 0)
+			(at 50.8 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 50.8 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SH477M063G1700"
+			(at 50.8 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8d2d9256-2ed5-43b5-8470-baf5cde8d454")
+		)
+		(pin "1"
+			(uuid "935247ac-b210-4116-b5c2-16e1982e547d")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 93.98 97.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5200bce3-11e7-4bed-a756-855bb0bf608b")
+		(property "Reference" "R2"
+			(at 93.98 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10Ω"
+			(at 93.98 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 99.568 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4454,7 +7222,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 132.08 109.22 0)
+			(at 93.98 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4479,15 +7247,15 @@
 	)
 	(symbol
 		(lib_id "FluxForge500:STGAP2SMTR")
-		(at 232.41 86.36 180)
+		(at 194.31 74.93 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "52ba2da1-799d-42ba-b70e-e2dfb1d4b5c8")
-		(property "Reference" "U3"
-			(at 232.41 75.438 0)
+		(property "Reference" "U4"
+			(at 194.31 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4495,7 +7263,7 @@
 			)
 		)
 		(property "Value" "STGAP2SCMTR"
-			(at 232.41 77.724 0)
+			(at 194.31 66.294 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4503,7 +7271,7 @@
 			)
 		)
 		(property "Footprint" "FluxForge500-lib:SO-8_L4.9-W3.9-P1.27-LS5.9-BL"
-			(at 232.41 74.93 0)
+			(at 194.31 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4512,7 +7280,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C2970172.pdf"
-			(at 232.41 72.39 0)
+			(at 194.31 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4521,7 +7289,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 232.41 86.36 0)
+			(at 194.31 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4530,7 +7298,7 @@
 			)
 		)
 		(property "Manufacturer" "ST(意法半导体)"
-			(at 232.41 69.85 0)
+			(at 194.31 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4539,7 +7307,7 @@
 			)
 		)
 		(property "MPN" "STGAP2SCMTR"
-			(at 232.41 67.31 0)
+			(at 194.31 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4548,7 +7316,7 @@
 			)
 		)
 		(property "LCSC Part" "C2970172"
-			(at 232.41 64.77 0)
+			(at 194.31 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4583,7 +7351,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "U3")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -4591,15 +7359,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 252.73 59.69 0)
+		(at 166.37 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "53f9c01d-ced9-41c4-ab4d-22a6f90e967c")
+		(uuid "549bdd6a-23c2-44da-903b-553b56a380e8")
 		(property "Reference" "C12"
-			(at 252.73 57.658 0)
+			(at 166.37 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4607,8 +7375,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "180uF"
-			(at 252.73 61.976 0)
+		(property "Value" "10uF"
+			(at 166.37 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4616,8 +7384,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 253.6952 63.5 0)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 167.3352 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4626,7 +7394,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 59.69 0)
+			(at 166.37 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4635,7 +7403,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 252.73 59.69 0)
+			(at 166.37 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FS32X106K101EGG"
+			(at 166.37 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4644,10 +7421,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "949fe2d1-ba8d-440d-a3bf-212d7a2bbc30")
+			(uuid "65352bb3-d7df-4572-8a85-9e27e72e40a3")
 		)
 		(pin "2"
-			(uuid "4aa65551-152b-43fd-a77d-b95a249f0ad5")
+			(uuid "fdc4d466-73f9-4ce0-a687-dcc4cc43acd2")
 		)
 		(instances
 			(project "FluxForge500"
@@ -4659,34 +7436,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 260.35 59.69 0)
+		(lib_id "Device:R")
+		(at 29.21 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7455669c-d15e-494f-953c-c4fd376a1835")
-		(property "Reference" "C13"
-			(at 260.35 57.658 0)
+		(uuid "592d7a62-0649-4cae-bd95-8ea683b4a12f")
+		(property "Reference" "R13"
+			(at 29.21 129.032 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "180uF"
-			(at 260.35 61.976 0)
+		(property "Value" "10Ω"
+			(at 29.21 131.064 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 261.3152 63.5 0)
+			(at 29.21 135.128 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4695,7 +7470,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 260.35 59.69 0)
+			(at 29.21 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4703,8 +7478,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 260.35 59.69 0)
+		(property "Description" "Resistor"
+			(at 29.21 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4713,47 +7488,50 @@
 			)
 		)
 		(pin "1"
-			(uuid "ce7a6d4b-00c0-4d9f-b40c-b54ac015153c")
+			(uuid "3710c635-e74a-40e6-b400-eb7f4893d56d")
 		)
 		(pin "2"
-			(uuid "c2f146cd-43a5-4715-9be7-3e54e3a430ae")
+			(uuid "49e70be4-c6cb-4fe3-bd73-ab907f145185")
 		)
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C13")
+					(reference "R13")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "FluxForge500:STGAP2SMTR")
-		(at 232.41 110.49 180)
+		(lib_id "FluxForge500:Thermistor_NTC-NTCALUG03A103H")
+		(at 185.42 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "76b0b6e6-e904-4833-ae38-b91264b7d94c")
-		(property "Reference" "U4"
-			(at 232.41 99.568 0)
+		(fields_autoplaced yes)
+		(uuid "64a09c56-8ae5-4aed-af73-9c1119191830")
+		(property "Reference" "TH1"
+			(at 187.96 123.5074 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "STGAP2SCMTR"
-			(at 232.41 101.854 0)
+		(property "Value" "NTC-10kΩ"
+			(at 187.96 126.0474 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "FluxForge500-lib:SO-8_L4.9-W3.9-P1.27-LS5.9-BL"
-			(at 232.41 99.06 0)
+		(property "Footprint" "FluxForge500-lib:NTC-TH_L8.8-W5.5-P1.50-D0.2"
+			(at 185.42 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4761,8 +7539,238 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2970172.pdf"
-			(at 232.41 96.52 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3195220.pdf"
+			(at 185.42 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
+			(at 185.42 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "VISHAY"
+			(at 185.42 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NTCALUG03A103H"
+			(at 185.42 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C3195220"
+			(at 185.42 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1de8b7c9-5d92-411b-a5fe-6cad9e8bb3c5")
+		)
+		(pin "2"
+			(uuid "728f3ca7-4200-4e9e-9209-2e587a28432c")
+		)
+		(instances
+			(project ""
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "TH1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 157.48 181.61 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "654ce8b8-d0f4-4548-a83b-cbd11fe33932")
+		(property "Reference" "R17"
+			(at 153.162 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "???Ω"
+			(at 155.194 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 159.258 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 157.48 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "323df16c-aa9a-4eba-8152-f75514ff93e3")
+		)
+		(pin "2"
+			(uuid "f861b23b-aa8e-4b72-b23d-9e5eae3b4e9c")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 118.11 148.59 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "67a2c7db-1a99-43a5-a236-37a967f8a10e")
+		(property "Reference" "D2"
+			(at 118.11 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Schottky"
+			(at 118.11 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 118.11 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d8efdb35-a53c-4a26-9b53-e83816e37f6e")
+		)
+		(pin "1"
+			(uuid "83b385aa-457b-4e32-977c-dbf439af72ec")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FluxForge500:MEQ3230B-9ROM-D")
+		(at 133.35 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "682aef27-d1e0-4975-afb8-6f96454e4293")
+		(property "Reference" "L1"
+			(at 133.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MEQ3230B-9ROM-D"
+			(at 133.35 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FluxForge500-lib:IND-TH_MEQ3230B-9ROM-D"
+			(at 133.35 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C22469973.pdf"
+			(at 133.35 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4771,7 +7779,238 @@
 			)
 		)
 		(property "Description" ""
-			(at 232.41 110.49 0)
+			(at 133.35 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "COILMX(迈翔科技)"
+			(at 133.35 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MEQ3230B-9ROM-D"
+			(at 133.35 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C22469973"
+			(at 133.35 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1cf60ae4-e564-4caa-8ee4-e314e0eb0bd5")
+		)
+		(pin "1"
+			(uuid "7c4c86ee-c7de-4281-9e68-6abeca87b005")
+		)
+		(instances
+			(project ""
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 118.11 182.88 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "683dd5e1-acc4-4d86-bce1-ed2ef154ddac")
+		(property "Reference" "R4"
+			(at 113.792 182.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "85kΩ"
+			(at 115.824 182.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.888 182.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 118.11 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d4fa07d-3bce-4704-aebe-50311ad2300f")
+		)
+		(pin "2"
+			(uuid "40124a5c-6aa4-443a-9cec-899e8c9b4099")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 105.41 152.4 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "74ee6d2d-4074-4975-ac54-cbd4ece16417")
+		(property "Reference" "C7"
+			(at 105.41 154.432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.22uF"
+			(at 105.41 150.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.3752 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 105.41 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef319f27-8f82-4cab-89a4-9c0d3cba3253")
+		)
+		(pin "2"
+			(uuid "52c58357-ef34-4ace-9010-47b9748d7088")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FluxForge500:STGAP2SMTR")
+		(at 194.31 99.06 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76b0b6e6-e904-4833-ae38-b91264b7d94c")
+		(property "Reference" "U5"
+			(at 194.31 88.138 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STGAP2SCMTR"
+			(at 194.31 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FluxForge500-lib:SO-8_L4.9-W3.9-P1.27-LS5.9-BL"
+			(at 194.31 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2970172.pdf"
+			(at 194.31 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 194.31 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4780,7 +8019,7 @@
 			)
 		)
 		(property "Manufacturer" "ST(意法半导体)"
-			(at 232.41 93.98 0)
+			(at 194.31 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4789,7 +8028,7 @@
 			)
 		)
 		(property "MPN" "STGAP2SCMTR"
-			(at 232.41 91.44 0)
+			(at 194.31 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4798,7 +8037,7 @@
 			)
 		)
 		(property "LCSC Part" "C2970172"
-			(at 232.41 88.9 0)
+			(at 194.31 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4833,7 +8072,7 @@
 		(instances
 			(project ""
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "U4")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -4841,15 +8080,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 243.84 36.83 270)
+		(at 34.29 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "961bcf3c-f98e-4bd4-b5b3-020c4ed8d29a")
-		(property "Reference" "C14"
-			(at 245.872 36.83 0)
+		(uuid "77625556-b1dd-437b-be51-4ca08528eaca")
+		(property "Reference" "C24"
+			(at 34.29 135.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4857,8 +8096,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
-			(at 241.554 36.83 0)
+		(property "Value" "0.1uF"
+			(at 34.29 139.446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4867,7 +8106,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 37.7952 0)
+			(at 35.2552 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4876,7 +8115,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 36.83 0)
+			(at 34.29 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4885,7 +8124,284 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 243.84 36.83 0)
+			(at 34.29 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73c09bc7-8886-4e48-9b1c-067ac7f829e5")
+		)
+		(pin "2"
+			(uuid "f725308a-9f32-4c3b-8734-a41cc9722066")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 173.99 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7831585d-d89d-4eb4-be66-ad8b973ffd73")
+		(property "Reference" "C13"
+			(at 173.99 46.228 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 173.99 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 174.9552 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 173.99 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FS32X106K101EGG"
+			(at 173.99 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "49609f40-51a8-434a-87bb-d670e99931e1")
+		)
+		(pin "2"
+			(uuid "5cf7a2d2-f788-4e7b-9726-2c6c8fc809f0")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 118.11 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7abcbb9d-ac66-4a93-9fce-2c199e09c4f3")
+		(property "Reference" "#PWR04"
+			(at 118.11 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 118.11 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e87ec6eb-e1fc-4270-afe3-68a2ea85a842")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 157.48 186.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d8b016b-2914-473b-8a15-39d3ffd003de")
+		(property "Reference" "#PWR011"
+			(at 157.48 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 157.48 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02dcf496-758b-4636-aa3e-2de9f94126cf")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 231.14 25.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "961bcf3c-f98e-4bd4-b5b3-020c4ed8d29a")
+		(property "Reference" "C20"
+			(at 233.172 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 228.854 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 26.3652 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 231.14 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4902,7 +8418,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C14")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -4910,15 +8426,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 219.71 59.69 0)
+		(at 105.41 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b3a0a23f-5fea-4914-9fe8-009943d06f94")
-		(property "Reference" "C9"
-			(at 219.71 57.658 0)
+		(uuid "981062ae-354b-44e2-84a3-cbb9a4613832")
+		(property "Reference" "C6"
+			(at 105.41 132.588 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4926,8 +8442,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 219.71 61.976 0)
+		(property "Value" "0.22uF"
+			(at 105.41 136.906 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4936,7 +8452,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.6752 63.5 0)
+			(at 106.3752 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4945,7 +8461,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 219.71 59.69 0)
+			(at 105.41 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4954,7 +8470,230 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 219.71 59.69 0)
+			(at 105.41 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de6e20e9-3ff5-4f83-8c37-b921ead48ef5")
+		)
+		(pin "2"
+			(uuid "645fe3a8-2d73-4533-be8e-ae8b405df139")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 255.27 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d9dc53e-5697-42d5-8d69-e3c23903e7a9")
+		(property "Reference" "C23"
+			(at 255.27 46.228 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330uF"
+			(at 255.27 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+			(at 256.2352 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 255.27 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 255.27 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NPTE2101J331MJTM"
+			(at 255.27 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1f263a1c-6fc9-4f27-b47c-0aa28bc94af2")
+		)
+		(pin "1"
+			(uuid "0b3f0c0c-5520-432f-926f-11014c2a6366")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 118.11 172.72 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a9061dc6-aa30-4670-8316-f578a4f68880")
+		(property "Reference" "R3"
+			(at 113.792 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 115.824 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.888 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 118.11 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a126f955-951a-4792-962a-fa8ed09cb5b4")
+		)
+		(pin "2"
+			(uuid "435dc520-8878-4311-a9f5-e982780fe84c")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 196.85 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3a0a23f-5fea-4914-9fe8-009943d06f94")
+		(property "Reference" "C16"
+			(at 196.85 46.228 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 196.85 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
+			(at 197.8152 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 196.85 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FS55X226K101LRG"
+			(at 196.85 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4971,7 +8710,152 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C9")
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 219.71 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bac2fe95-5913-4f7f-91fa-c3ca299fd392")
+		(property "Reference" "C19"
+			(at 219.71 46.228 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 219.71 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
+			(at 220.6752 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 219.71 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FS55X226K101LRG"
+			(at 219.71 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9a4f843-75b7-4fbd-b928-477170039f37")
+		)
+		(pin "2"
+			(uuid "cbf99b88-0236-4fd7-a8dc-8cfc556f8ba6")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 157.48 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c0bec05f-c8f8-40a6-9839-3b56ec3b2ca4")
+		(property "Reference" "R16"
+			(at 153.162 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "???Ω"
+			(at 155.194 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 155.702 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 157.48 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1101333-9c45-41ee-a08f-149e41a21143")
+		)
+		(pin "2"
+			(uuid "c239aa31-3a58-448d-a96d-28d9916616d0")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -4979,7 +8863,7 @@
 	)
 	(symbol
 		(lib_id "FluxForge500:SFG019N100C3")
-		(at 200.66 85.09 0)
+		(at 162.56 73.66 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4988,7 +8872,7 @@
 		(dnp no)
 		(uuid "c52d6ede-6b84-4888-bb09-6be1e8cf69c2")
 		(property "Reference" "Q3"
-			(at 193.04 85.0899 0)
+			(at 154.94 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4997,7 +8881,7 @@
 			)
 		)
 		(property "Value" "SFG019N100C3"
-			(at 193.04 87.6299 0)
+			(at 154.94 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5006,7 +8890,7 @@
 			)
 		)
 		(property "Footprint" "FluxForge500-lib:TO-247-4_L16.8-W5.0-L"
-			(at 200.66 97.79 0)
+			(at 162.56 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5015,7 +8899,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C49257109.pdf"
-			(at 200.66 100.33 0)
+			(at 162.56 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5024,7 +8908,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 200.66 85.09 0)
+			(at 162.56 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5033,7 +8917,7 @@
 			)
 		)
 		(property "Manufacturer" "赛力康电气"
-			(at 200.66 102.87 0)
+			(at 162.56 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5042,7 +8926,7 @@
 			)
 		)
 		(property "MPN" "SFG019N100C3"
-			(at 200.66 105.41 0)
+			(at 162.56 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5051,7 +8935,7 @@
 			)
 		)
 		(property "LCSC Part" "C49257109"
-			(at 200.66 107.95 0)
+			(at 162.56 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5082,7 +8966,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 63.5 0)
+		(at 101.6 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5090,8 +8974,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5d4c6f5-de7d-4c7d-942c-d291b8b5bb2c")
-		(property "Reference" "#PWR01"
-			(at 124.46 69.85 0)
+		(property "Reference" "#PWR03"
+			(at 101.6 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5100,7 +8984,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 68.58 0)
+			(at 101.6 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5108,7 +8992,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 63.5 0)
+			(at 101.6 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5117,7 +9001,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 63.5 0)
+			(at 101.6 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5126,7 +9010,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 63.5 0)
+			(at 101.6 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5140,7 +9024,7 @@
 		(instances
 			(project ""
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -5148,7 +9032,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 240.03 46.99 0)
+		(at 227.33 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5156,7 +9040,7 @@
 		(dnp no)
 		(uuid "c98e8a98-36b6-4369-bfc7-a41fb2a38f1d")
 		(property "Reference" "R10"
-			(at 244.348 46.99 90)
+			(at 231.648 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5164,7 +9048,7 @@
 			)
 		)
 		(property "Value" "100Ω"
-			(at 242.316 46.99 90)
+			(at 229.616 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5172,7 +9056,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 238.252 46.99 90)
+			(at 225.552 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5181,7 +9065,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 240.03 46.99 0)
+			(at 227.33 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5190,7 +9074,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 240.03 46.99 0)
+			(at 227.33 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5214,16 +9098,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 154.94 127 0)
+		(lib_id "Device:C_Polarized")
+		(at 240.03 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d83794ba-dff4-40d6-aa27-e6363ceaa0f0")
-		(property "Reference" "C1"
-			(at 154.94 124.968 0)
+		(uuid "cbd1ff09-e2be-48f7-996f-28bfd1d2aa9a")
+		(property "Reference" "C21"
+			(at 240.03 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5231,8 +9115,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47pF"
-			(at 154.94 129.286 0)
+		(property "Value" "180uF"
+			(at 240.03 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5240,8 +9124,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 155.9052 130.81 0)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+			(at 240.9952 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5250,7 +9134,163 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 127 0)
+			(at 240.03 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 240.03 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "A750MW187M1JAAE020"
+			(at 240.03 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "03ac3266-4a19-427f-9363-9e88780c80b5")
+		)
+		(pin "1"
+			(uuid "91d6c683-e11f-479e-9d89-7218b8aacb5d")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 59.69 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc0f2fee-bf90-471f-afab-db6d5737a83e")
+		(property "Reference" "C2"
+			(at 59.69 46.228 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470uF"
+			(at 59.69 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+			(at 60.6552 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 59.69 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SH477M063G1700"
+			(at 59.69 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f2f15836-337f-4e4e-b4ac-47091ea548b9")
+		)
+		(pin "1"
+			(uuid "a6a3b431-1e40-4dbe-9837-93a6e6d88e57")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 116.84 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d83794ba-dff4-40d6-aa27-e6363ceaa0f0")
+		(property "Reference" "C10"
+			(at 116.84 113.538 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47pF"
+			(at 116.84 117.856 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 117.8052 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5259,7 +9299,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 154.94 127 0)
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5276,7 +9316,7 @@
 		(instances
 			(project ""
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C1")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -5284,15 +9324,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 234.95 59.69 0)
+		(at 212.09 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "dcb26281-b444-440e-a32a-a055a48586d3")
-		(property "Reference" "C11"
-			(at 234.95 57.658 0)
+		(property "Reference" "C18"
+			(at 212.09 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5300,8 +9340,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 234.95 61.976 0)
+		(property "Value" "22uF"
+			(at 212.09 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5309,8 +9349,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 235.9152 63.5 0)
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
+			(at 213.0552 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5319,7 +9359,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 234.95 59.69 0)
+			(at 212.09 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5328,7 +9368,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 234.95 59.69 0)
+			(at 212.09 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FS55X226K101LRG"
+			(at 212.09 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5345,7 +9394,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C11")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -5353,15 +9402,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 247.65 46.99 0)
+		(at 234.95 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "df24909e-84fc-45db-a791-8daf9f257882")
-		(property "Reference" "R9"
-			(at 251.968 46.99 90)
+		(property "Reference" "R12"
+			(at 239.268 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5369,7 +9418,7 @@
 			)
 		)
 		(property "Value" "100Ω"
-			(at 249.936 46.99 90)
+			(at 237.236 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5377,7 +9426,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.872 46.99 90)
+			(at 233.172 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5386,7 +9435,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 247.65 46.99 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5395,7 +9444,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 247.65 46.99 0)
+			(at 234.95 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5412,7 +9461,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "R9")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -5420,15 +9469,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 212.09 59.69 0)
+		(at 189.23 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "e0d07096-e154-4d3b-8eeb-88a62cc0c129")
-		(property "Reference" "C8"
-			(at 212.09 57.658 0)
+		(property "Reference" "C15"
+			(at 189.23 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5436,8 +9485,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 212.09 61.976 0)
+		(property "Value" "22uF"
+			(at 189.23 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5445,8 +9494,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 213.0552 63.5 0)
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
+			(at 190.1952 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5455,7 +9504,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.09 59.69 0)
+			(at 189.23 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5464,7 +9513,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 212.09 59.69 0)
+			(at 189.23 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FS55X226K101LRG"
+			(at 189.23 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5481,41 +9539,39 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C8")
+					(reference "C15")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 124.46 59.69 0)
+		(lib_id "Device:R")
+		(at 48.26 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ea053cb9-d378-43d9-afe6-8199a78e65b2")
-		(property "Reference" "C4"
-			(at 124.46 57.658 0)
+		(uuid "e28df95b-743f-4d59-95f0-5a2d4d174ffa")
+		(property "Reference" "R14"
+			(at 43.688 136.906 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
-			(at 124.46 61.976 0)
+		(property "Value" "2kΩ"
+			(at 52.832 134.874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 125.4252 63.5 0)
+			(at 48.26 137.668 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5524,7 +9580,76 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.46 59.69 0)
+			(at 48.26 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 48.26 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af8a8b6d-3355-4669-9bc1-847932f8129b")
+		)
+		(pin "2"
+			(uuid "6d8bf90e-c9bd-4506-ad06-123f14fd4d99")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 86.36 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea053cb9-d378-43d9-afe6-8199a78e65b2")
+		(property "Reference" "C5"
+			(at 86.36 46.228 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 86.36 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
+			(at 87.3252 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5533,7 +9658,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 124.46 59.69 0)
+			(at 86.36 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FS55X226K101LRG"
+			(at 86.36 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5550,7 +9684,72 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C4")
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 100.33 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eca81de3-4366-471d-a971-e707e6cdb3a4")
+		(property "Reference" "#PWR02"
+			(at 100.33 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 100.33 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 100.33 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6061790-ecc8-45e0-b7e0-fbfad2298add")
+		)
+		(instances
+			(project "FluxForge500"
+				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5558,15 +9757,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 132.08 59.69 0)
+		(at 93.98 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "ecd29afa-2ef6-48a7-ade1-76d92ecf5f0c")
-		(property "Reference" "C3"
-			(at 132.08 57.658 0)
+		(property "Reference" "C8"
+			(at 93.98 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5574,8 +9773,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
-			(at 132.08 61.976 0)
+		(property "Value" "22uF"
+			(at 93.98 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5583,8 +9782,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 133.0452 63.5 0)
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
+			(at 94.9452 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5593,7 +9792,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 59.69 0)
+			(at 93.98 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5602,7 +9801,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 132.08 59.69 0)
+			(at 93.98 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FS55X226K101LRG"
+			(at 93.98 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5619,7 +9827,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C3")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -5627,7 +9835,7 @@
 	)
 	(symbol
 		(lib_id "FluxForge500:SFG019N100C3")
-		(at 200.66 109.22 0)
+		(at 162.56 97.79 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5636,7 +9844,7 @@
 		(dnp no)
 		(uuid "f10fb21f-9a0b-4c42-ab6a-2e57ba563cc1")
 		(property "Reference" "Q4"
-			(at 193.04 109.2199 0)
+			(at 154.94 97.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5645,7 +9853,7 @@
 			)
 		)
 		(property "Value" "SFG019N100C3"
-			(at 193.04 111.7599 0)
+			(at 154.94 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5654,7 +9862,7 @@
 			)
 		)
 		(property "Footprint" "FluxForge500-lib:TO-247-4_L16.8-W5.0-L"
-			(at 200.66 121.92 0)
+			(at 162.56 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5663,7 +9871,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C49257109.pdf"
-			(at 200.66 124.46 0)
+			(at 162.56 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5672,7 +9880,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 200.66 109.22 0)
+			(at 162.56 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5681,7 +9889,7 @@
 			)
 		)
 		(property "Manufacturer" "赛力康电气"
-			(at 200.66 127 0)
+			(at 162.56 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5690,7 +9898,7 @@
 			)
 		)
 		(property "MPN" "SFG019N100C3"
-			(at 200.66 129.54 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5699,7 +9907,7 @@
 			)
 		)
 		(property "LCSC Part" "C49257109"
-			(at 200.66 132.08 0)
+			(at 162.56 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5730,15 +9938,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 204.47 59.69 0)
+		(at 181.61 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "f33a7c7f-e08f-4a72-92dc-64003f7f1770")
-		(property "Reference" "C7"
-			(at 204.47 57.658 0)
+		(property "Reference" "C14"
+			(at 181.61 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5746,8 +9954,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 204.47 61.976 0)
+		(property "Value" "22uF"
+			(at 181.61 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5755,8 +9963,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 205.4352 63.5 0)
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric"
+			(at 182.5752 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5765,7 +9973,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 59.69 0)
+			(at 181.61 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5774,7 +9982,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 204.47 59.69 0)
+			(at 181.61 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FS55X226K101LRG"
+			(at 181.61 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5791,7 +10008,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "C7")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -5799,7 +10016,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 171.45 132.08 0)
+		(at 133.35 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5807,8 +10024,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f684e3f5-c5f7-484e-875f-88024ca9a678")
-		(property "Reference" "#PWR03"
-			(at 171.45 138.43 0)
+		(property "Reference" "#PWR05"
+			(at 133.35 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5817,7 +10034,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 171.45 137.16 0)
+			(at 133.35 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5825,7 +10042,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 132.08 0)
+			(at 133.35 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5834,7 +10051,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 132.08 0)
+			(at 133.35 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5843,7 +10060,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 171.45 132.08 0)
+			(at 133.35 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5857,7 +10074,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "#PWR03")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -5865,7 +10082,7 @@
 	)
 	(symbol
 		(lib_id "FluxForge500:STGAP2SMTR")
-		(at 111.76 86.36 0)
+		(at 73.66 74.93 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5873,8 +10090,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f79d2c88-f758-48e2-8e52-c300c7b46c8f")
-		(property "Reference" "U1"
-			(at 111.76 75.438 0)
+		(property "Reference" "U2"
+			(at 73.66 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5882,7 +10099,7 @@
 			)
 		)
 		(property "Value" "STGAP2SCMTR"
-			(at 111.76 77.724 0)
+			(at 73.66 66.294 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5890,7 +10107,7 @@
 			)
 		)
 		(property "Footprint" "FluxForge500-lib:SO-8_L4.9-W3.9-P1.27-LS5.9-BL"
-			(at 111.76 74.93 0)
+			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5899,7 +10116,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C2970172.pdf"
-			(at 111.76 72.39 0)
+			(at 73.66 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5908,7 +10125,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 111.76 86.36 0)
+			(at 73.66 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5917,7 +10134,7 @@
 			)
 		)
 		(property "Manufacturer" "ST(意法半导体)"
-			(at 111.76 69.85 0)
+			(at 73.66 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5926,7 +10143,7 @@
 			)
 		)
 		(property "MPN" "STGAP2SCMTR"
-			(at 111.76 67.31 0)
+			(at 73.66 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5935,7 +10152,7 @@
 			)
 		)
 		(property "LCSC Part" "C2970172"
-			(at 111.76 64.77 0)
+			(at 73.66 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5970,7 +10187,7 @@
 		(instances
 			(project "FluxForge500"
 				(path "/a2f35304-c637-43ce-ab88-fc8f2dc2eb48"
-					(reference "U1")
+					(reference "U2")
 					(unit 1)
 				)
 			)
